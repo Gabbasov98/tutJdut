@@ -1,0 +1,210 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Добавить сотрудника", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"status":"manager","active":"staff"})
+            <main class="content">
+
+                <section class='worker-top'>
+                    <div class='container'>
+                        <div class="worker-top__inner">
+                            <a href="" class="worker-top__link btn">
+                                <i>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#85949E"/>
+                                </svg>
+                            </i>
+                                <span>Добавить сотрудника</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='add-worker'>
+                    <div class='container'>
+                        <div class='add-worker__inner'>
+                            <div class="add-worker__left">
+                                <div class="worker-sidebar">
+                                    <div class="worker-sidebar__top">
+                                        <div class="worker-sidebar__tabs">
+                                            <a href="add-personal.html" class="worker-sidebar__tab worker-sidebar__tab--active btn">Рекрутинг</a>
+                                            <a href="add-personal2.html" class="worker-sidebar__tab btn">С оформлением</a>
+                                        </div>
+                                    </div>
+                                    <div class="worker-sidebar__bottom">
+                                        <div class="worker-sidebar__links">
+                                            <a href="#docs" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Документы</span>
+                                            </a>
+                                            <a href="#prof" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Профессиональная деятельность</span>
+                                            </a>
+                                            <a href="#info" class="worker-sidebar__link worker-sidebar__link--active">
+                                                <i></i>
+                                                <span>Личная информация </span>
+                                            </a>
+                                        </div>
+                                        <button class="worker-sidebar__btn btn btn-blue">Сохранить карточку</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-worker__right">
+                                <div id="info" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Личная информация</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid">
+                                        <fieldset class='form-group add-worker__field--double'>
+                                            <label>ФИО</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--double'>
+                                            <label>ФИО на латинице</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Гражданство</label>
+                                            <div class="custom-select">
+                                                <div class="custom-select__target">
+                                                    <input type="text" value="Казахстан">
+                                                </div>
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">Казахстан</div>
+                                                        <div class="custom-select__dropdown-item">Узбекистан</div>
+                                                        <div class="custom-select__dropdown-item">Киргизия</div>
+                                                        <div class="custom-select__dropdown-item">Таджикистан</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Пол</label>
+                                            <div class="add-worker__sex">
+                                                <div class="add-worker__sex-item">
+                                                    <input checked type='radio' class='radio' id='sex1' name='sex' />
+                                                    <label for='sex1'>Мужской</label>
+                                                </div>
+                                                <div class="add-worker__sex-item">
+                                                    <input type='radio' class='radio' id='sex2' name='sex' />
+                                                    <label for='sex2'>Женский</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Дата рождения</label>
+                                            <div class="date-input">
+                                                <input type='text' />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Возраст</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Телефон</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Доп. телефон</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Telegram</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="add-worker__img-block">
+                                            <div class="add-worker__img">
+                                                <div class="add-worker__img-upload">
+                                                    <input type="file" name="" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="prof" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Профессиональная деятельность</h3>
+                                        <button class="add-worker__step-add">Добавить еще профессию</button>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__step-grid--six">
+
+                                        <fieldset class='form-group add-worker__field--double'>
+                                            <label>Профессия</label>
+                                            <div class="custom-select">
+                                                <div class="custom-select__target">
+                                                    <input type="text" placeholder="Выберите профессию">
+                                                </div>
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item">Профессия</div>
+                                                        <div class="custom-select__dropdown-item">Профессия 2</div>
+                                                        <div class="custom-select__dropdown-item">Профессия 3</div>
+                                                        <div class="custom-select__dropdown-item">Профессия 4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Стаж</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--treble'>
+                                            <label>Комментарий</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div id="docs" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Документы</h3>
+                                    </div>
+                                    <div class="add-worker__checks">
+                                        <div class="add-worker__check check">
+                                            <input checked type='checkbox' id='doc' />
+                                            <label for='doc'>Патент</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input type='checkbox' id='doc2' />
+                                            <label for='doc2'>Чеки НДФЛ</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input type='checkbox' id='doc3' />
+                                            <label for='doc3'>Регистрация</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input type='checkbox' id='doc4' />
+                                            <label for='doc4'>ИНН</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input checked type='checkbox' id='doc5' />
+                                            <label for='doc5'>СНИЛС</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input type='checkbox' id='doc6' />
+                                            <label for='doc6'>Водительское</label>
+                                        </div>
+                                        <div class="add-worker__check check">
+                                            <input type='checkbox' id='doc7' />
+                                            <label for='doc7'>Вакцинация</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

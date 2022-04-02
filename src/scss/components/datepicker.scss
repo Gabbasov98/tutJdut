@@ -1,0 +1,247 @@
+.date-input {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        width: 36px;
+        height: 36px;
+        right: 4px;
+        bottom: 4px;
+        pointer-events: none;
+        background-image: url(../img/calendar.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &:hover {
+        &::after {
+            background-image: url(../img/calendar2.svg);
+        }
+    }
+    input {
+        cursor: pointer;
+        background: #F3F6F9 !important;
+        border-color: transparent !important;
+    }
+}
+
+.ui-widget-content {
+    background: #FFFFFF;
+    border: 1px solid #E2E9EF !important;
+    box-shadow: 0px 3px 10px rgba(133, 153, 166, 0.15);
+    border-radius: 4px;
+    padding: 20px;
+    width: 345px !important;
+}
+
+.ui-datepicker-header {
+    background-color: transparent;
+    padding: 0 !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &::before {
+        display: none;
+    }
+}
+
+.ui-datepicker-title {
+    color: #85949E;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px !important;
+    margin: 0 !important;
+    flex-grow: 1;
+}
+
+.ui-datepicker-next {
+    order: 3;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.45718 14.957L4.04297 13.5428L9.83586 7.74992L4.04297 1.95703L5.45718 0.542818L12.6643 7.74992L5.45718 14.957Z' fill='%2325A1F4'/%3E%3C/svg%3E") !important;
+    width: 15px !important;
+    height: 19px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    display: block;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: static !important;
+}
+
+.ui-datepicker-prev {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.5428 0.542969L11.957 1.95718L6.16414 7.75008L11.957 13.543L10.5428 14.9572L3.33571 7.75008L10.5428 0.542969Z' fill='%2325A1F4'/%3E%3C/svg%3E") !important;
+}
+
+.ui-datepicker {
+    // width: 320px;
+    color: $black !important;
+    font-family: 'Open Sans', sans-serif !important;
+    th,
+    td {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+    th {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #85949E;
+    }
+}
+
+.ui-state-default {
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #F3F6F9 !important;
+    border-radius: 3px;
+    border: none !important;
+    &:hover {
+        background: #25A1F4 !important;
+        color: #fff !important;
+    }
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-active,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    background: #25A1F4 !important;
+    color: #fff !important;
+}
+
+.ui-datepicker-calendar {
+    table,
+    thead,
+    td {
+        display: block;
+    }
+    th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+        margin-top: 2px;
+    }
+    tr {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 4px;
+    }
+}
+
+.daterangepicker {
+    border: 1px solid #E2E9EF;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px rgba(133, 153, 166, 0.15);
+    border-radius: 4px;
+    &::after,
+    &::before {
+        display: none;
+    }
+    .drp-calendar {
+        max-width: unset;
+        width: 320px;
+        &.left {
+            padding: 20px 10px 20px 20px;
+        }
+        &.right {
+            padding: 20px 20px 20px 10px;
+        }
+    }
+    table {
+        display: block;
+    }
+    thead {
+        display: block;
+        tr {
+            &:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                th {
+                    padding-bottom: 21px;
+                }
+            }
+            &:last-child {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 4px;
+                th {
+                    width: 36px !important;
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+        tr {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+        }
+    }
+    td,
+    th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px !important;
+    }
+    th.month {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: $grey;
+    }
+    .calendar-table .next span,
+    .calendar-table .prev span {
+        border-color: $blue;
+    }
+    // td.available:hover,
+    th.available:hover {
+        background-color: transparent;
+    }
+    td.available:hover,
+    td.active,
+    td.active:hover {
+        background: $blue;
+        color: #fff;
+    }
+    td {
+        background: #F3F6F9;
+        border-radius: 3px;
+        width: 36px !important;
+    }
+}

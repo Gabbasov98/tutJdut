@@ -1,0 +1,81 @@
+@import 'vars';
+.header {
+    position: relative;
+    z-index: 2;
+    padding: 18px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(133, 153, 166, 0.25), 0px 2px 15px rgba(133, 153, 166, 0.14);
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        width: 124px;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    &__btn {
+        padding: 0 0 0 15px;
+        height: 34px;
+        border-left: 1px solid rgba(#E2E9EF, 0.5);
+        margin-left: 15px;
+        &:hover {
+            path {
+                stroke: #E24930;
+            }
+        }
+        &--settings {
+            &:hover {
+                path {
+                    stroke: transparent;
+                    fill: #1C7BBB;
+                }
+            }
+        }
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        img {
+            width: 34px;
+            height: 34px;
+            display: block;
+            margin-right: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.nav {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    &__item {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        height: 34px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 4px;
+        &:hover {
+            color: #1C7BBB;
+        }
+        &--active {
+            background-color: $blue;
+            color: #fff;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import 'vars';
+.managers-tables {
+    table {
+        background-color: #fff;
+    }
+    thead {
+        position: relative;
+        z-index: 2;
+        filter: drop-shadow(0px 2px 6px rgba(133, 153, 166, 0.14));
+        // background-color: #fff;
+    }
+    th {
+        background: transparent;
+    }
+    .more {
+        &__btn {
+            margin-left: 0;
+        }
+    }
+    .manager-table2 {
+        th,
+        td {
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9) {
+                text-align: center;
+            }
+            &:nth-child(6) {
+                .table__sort {
+                    justify-content: center;
+                    span {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.managers-top {
+    background-color: #fff;
+    padding: 15px 0;
+    border-top: 1px solid #EEF3F9;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: $grey;
+        margin-right: 10px;
+    }
+    .date-filter__item,
+    .date-filter__picker {
+        background: #F3F6F9;
+        &:hover {
+            background: $blue;
+            // color: $grey;
+        }
+        &.date-filter__item--active {
+            background: $blue;
+        }
+    }
+    &__check {
+        label {
+            padding: 0 27px 0 0;
+            &::before {
+                left: unset;
+                right: 0;
+            }
+        }
+    }
+}

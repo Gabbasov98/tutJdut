@@ -1,0 +1,740 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Документы</title>
+</head>
+
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            <header class='header'>
+    <div class='container'>
+        <div class='header__inner'>
+            <div class="header__left">
+                <a href="" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                 
+                <div class="nav">
+                    <a href="index.html" class="nav__item  ">Главная</a>
+                    <a href="staff.html" class="nav__item ">Сотрудники</a>
+                    <a href="docs.html" class="nav__item nav__item--active">Документы</a>
+                </div>
+                
+            </div>
+            <div class="header__right">
+                <a href="" class="header__user">
+                    <img src="img/avatar.jpg" alt="">
+                    <span>Руководитель</span>
+                </a>
+                <a href="" class="header__btn header__btn--settings btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.15 6.00006C8.52699 6.00006 7.91797 6.18481 7.39996 6.53093C6.88194 6.87706 6.4782 7.36902 6.23978 7.94461C6.00136 8.5202 5.93898 9.15356 6.06053 9.7646C6.18207 10.3756 6.48208 10.9369 6.92261 11.3774C7.36315 11.818 7.92443 12.118 8.53547 12.2395C9.14651 12.3611 9.77987 12.2987 10.3555 12.0603C10.931 11.8219 11.423 11.4181 11.7691 10.9001C12.1153 10.3821 12.3 9.77307 12.3 9.15006C12.3026 8.73566 12.223 8.32487 12.0656 7.94151C11.9082 7.55814 11.6763 7.20984 11.3833 6.91681C11.0902 6.62378 10.7419 6.39186 10.3586 6.23449C9.9752 6.07711 9.5644 5.99743 9.15 6.00006ZM9.15 10.5001C8.883 10.5001 8.62199 10.4209 8.39998 10.2725C8.17798 10.1242 8.00494 9.91336 7.90276 9.66668C7.80059 9.42 7.77385 9.14856 7.82594 8.88669C7.87803 8.62482 8.00661 8.38427 8.19541 8.19547C8.38421 8.00667 8.62476 7.87809 8.88663 7.826C9.14851 7.77391 9.41994 7.80065 9.66663 7.90282C9.91331 8.005 10.1241 8.17804 10.2725 8.40004C10.4208 8.62205 10.5 8.88306 10.5 9.15006C10.5033 9.32825 10.4706 9.50528 10.404 9.67056C10.3373 9.83584 10.238 9.98598 10.1119 10.112C9.98592 10.238 9.83578 10.3373 9.6705 10.404C9.50522 10.4707 9.32819 10.5034 9.15 10.5001Z" fill="#85949E"/>
+                        <path d="M15.2834 9.57001C15.1914 9.5185 15.1148 9.4434 15.0614 9.35244C15.0081 9.26148 14.98 9.15795 14.98 9.05251C14.98 8.94708 15.0081 8.84355 15.0614 8.75259C15.1148 8.66163 15.1914 8.58652 15.2834 8.53501C15.8309 8.21142 16.2281 7.68432 16.3883 7.06883C16.5485 6.45334 16.4586 5.79947 16.1384 5.25001L15.8234 4.71001C15.1484 3.58501 13.7084 3.18001 12.5834 3.85501C12.2234 4.08001 11.7734 3.81001 11.7734 3.36001V3.22501C11.7743 2.89972 11.7109 2.57746 11.5869 2.27675C11.4628 1.97604 11.2806 1.70282 11.0506 1.4728C10.8205 1.24279 10.5473 1.06052 10.2466 0.936473C9.94591 0.812429 9.62364 0.74906 9.29835 0.750011H8.84835C8.19369 0.75565 7.56743 1.01822 7.1045 1.48116C6.64156 1.94409 6.37899 2.57035 6.37335 3.22501V3.31501C6.37335 3.81001 5.83335 4.08001 5.42835 3.85501C5.15076 3.69484 4.84428 3.59105 4.52649 3.5496C4.20869 3.50816 3.88584 3.52986 3.57645 3.61348C3.26707 3.6971 2.97724 3.84098 2.72359 4.03687C2.46994 4.23276 2.25746 4.47681 2.09835 4.75501L1.82835 5.25001C1.15335 6.37501 1.55835 7.86001 2.68335 8.53501C2.77535 8.58652 2.85195 8.66163 2.90527 8.75259C2.95859 8.84355 2.98669 8.94708 2.98669 9.05251C2.98669 9.15795 2.95859 9.26148 2.90527 9.35244C2.85195 9.4434 2.77535 9.5185 2.68335 9.57001C2.13583 9.89361 1.7386 10.4207 1.5784 11.0362C1.41821 11.6517 1.50807 12.3056 1.82835 12.855L2.14335 13.35C2.30246 13.6282 2.51494 13.8723 2.76859 14.0682C3.02224 14.264 3.31207 14.4079 3.62145 14.4915C3.93084 14.5752 4.25369 14.5969 4.57149 14.5554C4.88928 14.514 5.19576 14.4102 5.47335 14.25L5.60835 14.16C5.68861 14.1101 5.78075 14.0826 5.87522 14.0803C5.9697 14.0779 6.06308 14.1009 6.14569 14.1468C6.22831 14.1927 6.29715 14.2598 6.34509 14.3413C6.39303 14.4227 6.41832 14.5155 6.41835 14.61C6.4162 14.9179 6.47526 15.2232 6.59209 15.508C6.70892 15.7929 6.8812 16.0517 7.09892 16.2694C7.31664 16.4872 7.57546 16.6594 7.86033 16.7763C8.14521 16.8931 8.45046 16.9522 8.75835 16.95H9.52335C10.1312 16.9474 10.7135 16.7048 11.1433 16.2749C11.5731 15.8451 11.8157 15.2629 11.8184 14.655C11.8184 14.25 12.2234 14.025 12.5834 14.205L12.6734 14.25C13.7984 14.925 15.2384 14.52 15.9134 13.395L16.2284 12.855C16.5335 12.293 16.6054 11.6336 16.4286 11.019C16.2518 10.4044 15.8405 9.88397 15.2834 9.57001ZM14.3834 11.145C14.5113 11.231 14.6043 11.3599 14.6456 11.5084C14.6868 11.657 14.6736 11.8154 14.6084 11.955L14.2934 12.495C14.1584 12.765 13.7984 12.855 13.5284 12.72L13.4384 12.675C11.9084 11.775 9.97336 12.9 9.97336 14.655C9.97218 14.7859 9.91965 14.9112 9.82708 15.0037C9.7345 15.0963 9.60927 15.1488 9.47835 15.15H8.71335C8.64169 15.1528 8.57023 15.1407 8.50346 15.1146C8.43668 15.0884 8.37604 15.0488 8.32533 14.998C8.27462 14.9473 8.23494 14.8867 8.20879 14.8199C8.18263 14.7531 8.17057 14.6817 8.17335 14.61C8.17309 14.1994 8.06478 13.7961 7.85929 13.4405C7.65381 13.085 7.35839 12.7898 7.00271 12.5846C6.64702 12.3794 6.24361 12.2714 5.83298 12.2715C5.42235 12.2716 5.01897 12.3797 4.66335 12.585L4.52835 12.675C4.45788 12.7181 4.37945 12.7464 4.29775 12.7584C4.21605 12.7703 4.13277 12.7657 4.05292 12.7447C3.97306 12.7237 3.89828 12.6867 3.83306 12.6361C3.76783 12.5855 3.71351 12.5222 3.67335 12.45L3.40335 11.955C3.22335 11.685 3.35835 11.325 3.62835 11.145C5.20335 10.245 5.20335 7.90501 3.62835 7.00501C3.5004 6.91903 3.40739 6.79014 3.36613 6.6416C3.32487 6.49306 3.33807 6.33467 3.40335 6.19501L3.67335 5.65501C3.71255 5.58191 3.7664 5.51767 3.83152 5.46629C3.89664 5.41491 3.97165 5.3775 4.05187 5.35639C4.13209 5.33528 4.2158 5.33092 4.29778 5.34359C4.37976 5.35625 4.45825 5.38567 4.52835 5.43001C6.14835 6.37501 8.17335 5.20501 8.17335 3.31501V3.22501C8.17769 3.04736 8.2502 2.87818 8.37586 2.75252C8.50152 2.62686 8.6707 2.55435 8.84835 2.55001H9.29835C9.47601 2.55435 9.64519 2.62686 9.77085 2.75252C9.89651 2.87818 9.96902 3.04736 9.97336 3.22501V3.36001C9.97336 5.16001 11.9534 6.33001 13.5284 5.43001C13.7984 5.29501 14.1584 5.38501 14.2934 5.65501L14.6084 6.19501C14.7884 6.46501 14.6534 6.82501 14.3834 7.00501C12.8084 7.90501 12.8084 10.2 14.3834 11.145Z" fill="#85949E"/>
+                    </svg>
+                </a>
+                <a href="" class="header__btn btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.2344 6.04688L15.1875 9L12.2344 11.9531" stroke="#85949E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.3125 9H15.1875" stroke="#85949E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.3125 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H7.3125" stroke="#85949E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="content">
+
+
+                <section class='staff-status'>
+                    <div class='container'>
+
+                        <div class="staff-status__inner">
+
+                            <div class="staff-status__left">
+
+                                <h1 class="staff-status__title display1">
+                                    Документы
+                                </h1>
+
+                            </div>
+
+                            <div class="staff-status__right">
+
+                                <a href="" class="staff-status__badge staff-status__badge--red">
+                                    <div class="staff-status__badge-title">
+                                        Истекают <strong>чеки НДФЛ</strong>
+                                    </div>
+                                    <div class="staff-status__badge-info">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.1365 12.0001L5.0215 11.1136C5.305 10.8301 5.461 10.4536 5.461 10.0531V6.54537C5.461 5.52762 5.9035 4.55487 6.676 3.87837C7.4545 3.19587 8.446 2.89587 9.47875 3.03162C11.224 3.26337 12.5403 4.84137 12.5403 6.70287V10.0531C12.5403 10.4536 12.6962 10.8301 12.979 11.1129L13.8647 12.0001H4.1365ZM10.5003 13.7559C10.5003 14.4301 9.81325 15.0001 9.00025 15.0001C8.18725 15.0001 7.50025 14.4301 7.50025 13.7559V13.5001H10.5003V13.7559ZM15.391 11.4061L14.0403 10.0531V6.70287C14.0403 4.09212 12.1638 1.87437 9.67525 1.54512C8.23375 1.35312 6.77875 1.79337 5.6875 2.75037C4.5895 3.71187 3.961 5.09487 3.961 6.54537L3.96025 10.0531L2.6095 11.4061C2.25775 11.7586 2.1535 12.2829 2.344 12.7426C2.53525 13.2031 2.98 13.5001 3.478 13.5001H6.00025V13.7559C6.00025 15.2694 7.34575 16.5001 9.00025 16.5001C10.6548 16.5001 12.0003 15.2694 12.0003 13.7559V13.5001H14.5225C15.0205 13.5001 15.4645 13.2031 15.655 12.7434C15.8463 12.2829 15.7428 11.7579 15.391 11.4061Z" fill="#F0A18F"/>
+                                            </svg>
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                                <a href="" class="staff-status__badge staff-status__badge--red">
+                                    <div class="staff-status__badge-title">
+                                        Истекает
+                                        <strong>патент</strong>
+                                    </div>
+                                    <div class="staff-status__badge-info">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.1365 12.0001L5.0215 11.1136C5.305 10.8301 5.461 10.4536 5.461 10.0531V6.54537C5.461 5.52762 5.9035 4.55487 6.676 3.87837C7.4545 3.19587 8.446 2.89587 9.47875 3.03162C11.224 3.26337 12.5403 4.84137 12.5403 6.70287V10.0531C12.5403 10.4536 12.6962 10.8301 12.979 11.1129L13.8647 12.0001H4.1365ZM10.5003 13.7559C10.5003 14.4301 9.81325 15.0001 9.00025 15.0001C8.18725 15.0001 7.50025 14.4301 7.50025 13.7559V13.5001H10.5003V13.7559ZM15.391 11.4061L14.0403 10.0531V6.70287C14.0403 4.09212 12.1638 1.87437 9.67525 1.54512C8.23375 1.35312 6.77875 1.79337 5.6875 2.75037C4.5895 3.71187 3.961 5.09487 3.961 6.54537L3.96025 10.0531L2.6095 11.4061C2.25775 11.7586 2.1535 12.2829 2.344 12.7426C2.53525 13.2031 2.98 13.5001 3.478 13.5001H6.00025V13.7559C6.00025 15.2694 7.34575 16.5001 9.00025 16.5001C10.6548 16.5001 12.0003 15.2694 12.0003 13.7559V13.5001H14.5225C15.0205 13.5001 15.4645 13.2031 15.655 12.7434C15.8463 12.2829 15.7428 11.7579 15.391 11.4061Z" fill="#F0A18F"/>
+                                            </svg>
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                                <a href="" class="staff-status__badge">
+                                    <div class="staff-status__badge-title">
+                                        <strong>Расторжение</strong>
+                                    </div>
+                                    <div class="staff-status__badge-info">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.5">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4998 9.75H7.49977C7.08503 9.75 6.74978 10.086 6.74978 10.5C6.74978 10.914 7.08503 11.25 7.49977 11.25H10.4998C10.9145 11.25 11.2498 10.914 11.2498 10.5C11.2498 10.086 10.9145 9.75 10.4998 9.75ZM13.083 15H4.91625C4.68675 15 4.5 14.832 4.5 14.625V3.375C4.5 3.168 4.68675 3 4.91625 3H9V5.3625C9 6.5415 9.91275 7.5 11.0355 7.5H13.5V14.625C13.5 14.832 13.3132 15 13.083 15ZM10.5 3.7335L12.5565 6H11.0355C10.74 6 10.5 5.71425 10.5 5.3625V3.7335ZM14.805 6.246L10.722 1.746C10.5795 1.58925 10.3785 1.5 10.1663 1.5H4.91625C3.8595 1.5 3 2.3415 3 3.375V14.625C3 15.6585 3.8595 16.5 4.91625 16.5H13.083C14.1398 16.5 15 15.6585 15 14.625V6.75C15 6.56325 14.9303 6.384 14.805 6.246Z" fill="#303438"/>
+                                                </g>
+                                            </svg>
+                                        <span>1</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class='filter'>
+                    <div class='container'>
+                        <div class='filter__inner'>
+                            <div class="filter__title">Показывать:</div>
+                            <div class="filter__item">
+                                <div class="filter__check check">
+                                    <input type='checkbox' class='checkbox' id='filter' />
+                                    <label for='filter'></label>
+                                </div>
+                                <div class="filter__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__top">
+                                            <span>Статус:</span>
+                                            <strong class="custom-select__placeholder">выбрать</strong>
+                                            <span class="custom-select__num">0</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.06797 7.08125L2.11016 7.13047L5.29766 10.7984C5.40547 10.9227 5.56719 11 5.74766 11C5.92812 11 6.08984 10.9203 6.19766 10.7984L9.38281 7.1375L9.43672 7.07656C9.47656 7.01797 9.5 6.94766 9.5 6.87266C9.5 6.66875 9.32656 6.50234 9.11094 6.50234L2.38906 6.50234C2.17344 6.50234 2 6.66875 2 6.87266C2 6.95 2.02578 7.02266 2.06797 7.08125Z" fill="#1C7BBB"/>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck1' />
+                                                    <label for='filterCheck1'>Новый</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck2' />
+                                                    <label for='filterCheck2'>Оформлен</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck3' />
+                                                    <label for='filterCheck3'>Расторжение</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck4' />
+                                                    <label for='filterCheck4'>не оформлен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__check check">
+                                    <input type='checkbox' class='checkbox' id='filter2' />
+                                    <label for='filter2'></label>
+                                </div>
+                                <div class="filter__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__top">
+                                            <span>Тип:</span>
+                                            <strong class="custom-select__placeholder">выбрать</strong>
+                                            <span class="custom-select__num">0</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.06797 7.08125L2.11016 7.13047L5.29766 10.7984C5.40547 10.9227 5.56719 11 5.74766 11C5.92812 11 6.08984 10.9203 6.19766 10.7984L9.38281 7.1375L9.43672 7.07656C9.47656 7.01797 9.5 6.94766 9.5 6.87266C9.5 6.66875 9.32656 6.50234 9.11094 6.50234L2.38906 6.50234C2.17344 6.50234 2 6.66875 2 6.87266C2 6.95 2.02578 7.02266 2.06797 7.08125Z" fill="#1C7BBB"/>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck5' />
+                                                    <label for='filterCheck5'>Новый</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck6' />
+                                                    <label for='filterCheck6'>Оформлен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__check check">
+                                    <input type='checkbox' class='checkbox' id='filter3' />
+                                    <label for='filter3'></label>
+                                </div>
+                                <div class="filter__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__top">
+                                            <span>Объект:</span>
+                                            <strong class="custom-select__placeholder">выбрать</strong>
+                                            <span class="custom-select__num">0</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.06797 7.08125L2.11016 7.13047L5.29766 10.7984C5.40547 10.9227 5.56719 11 5.74766 11C5.92812 11 6.08984 10.9203 6.19766 10.7984L9.38281 7.1375L9.43672 7.07656C9.47656 7.01797 9.5 6.94766 9.5 6.87266C9.5 6.66875 9.32656 6.50234 9.11094 6.50234L2.38906 6.50234C2.17344 6.50234 2 6.66875 2 6.87266C2 6.95 2.02578 7.02266 2.06797 7.08125Z" fill="#1C7BBB"/>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck7' />
+                                                    <label for='filterCheck7'>Новый</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck8' />
+                                                    <label for='filterCheck8'>Оформлен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__check check">
+                                    <input type='checkbox' class='checkbox' id='filter4' />
+                                    <label for='filter4'></label>
+                                </div>
+                                <div class="filter__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__top">
+                                            <span>Сотрудник:</span>
+                                            <strong class="custom-select__placeholder">выбрать</strong>
+                                            <span class="custom-select__num">0</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.06797 7.08125L2.11016 7.13047L5.29766 10.7984C5.40547 10.9227 5.56719 11 5.74766 11C5.92812 11 6.08984 10.9203 6.19766 10.7984L9.38281 7.1375L9.43672 7.07656C9.47656 7.01797 9.5 6.94766 9.5 6.87266C9.5 6.66875 9.32656 6.50234 9.11094 6.50234L2.38906 6.50234C2.17344 6.50234 2 6.66875 2 6.87266C2 6.95 2.02578 7.02266 2.06797 7.08125Z" fill="#1C7BBB"/>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck9' />
+                                                    <label for='filterCheck9'>Новый</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck10' />
+                                                    <label for='filterCheck10'>Оформлен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__check check">
+                                    <input type='checkbox' class='checkbox' id='filter5' />
+                                    <label for='filter5'></label>
+                                </div>
+                                <div class="filter__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__top">
+                                            <span>Юр.лицо:</span>
+                                            <strong class="custom-select__placeholder">выбрать</strong>
+                                            <span class="custom-select__num">0</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.06797 7.08125L2.11016 7.13047L5.29766 10.7984C5.40547 10.9227 5.56719 11 5.74766 11C5.92812 11 6.08984 10.9203 6.19766 10.7984L9.38281 7.1375L9.43672 7.07656C9.47656 7.01797 9.5 6.94766 9.5 6.87266C9.5 6.66875 9.32656 6.50234 9.11094 6.50234L2.38906 6.50234C2.17344 6.50234 2 6.66875 2 6.87266C2 6.95 2.02578 7.02266 2.06797 7.08125Z" fill="#1C7BBB"/>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck11' />
+                                                    <label for='filterCheck11'>Новый</label>
+                                                </div>
+                                                <div class="custom-select__dropdown-check check">
+                                                    <input type='checkbox' class='checkbox' id='filterCheck12' />
+                                                    <label for='filterCheck12'>Оформлен</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='table-nav'>
+                    <div class='container'>
+                        <div class='table-nav__inner'>
+                            <div class="table-nav__left">
+                                <div class="table-nav__selected grey-text">
+                                    <span>Выбрано</span>
+                                    <strong class="table-nav__selected-num">0</strong>
+                                    <button class="table-nav__clear btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.75">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1785 9.99996L14.756 6.42246C15.0819 6.09663 15.0819 5.56996 14.756 5.24413C14.4302 4.9183 13.9035 4.9183 13.5777 5.24413L10.0002 8.82163L6.42271 5.24413C6.09688 4.9183 5.57021 4.9183 5.24438 5.24413C4.91854 5.56996 4.91854 6.09663 5.24438 6.42246L8.82188 9.99996L5.24438 13.5775C4.91854 13.9033 4.91854 14.43 5.24438 14.7558C5.40688 14.9183 5.62021 15 5.83354 15C6.04688 15 6.26021 14.9183 6.42271 14.7558L10.0002 11.1783L13.5777 14.7558C13.7402 14.9183 13.9535 15 14.1669 15C14.3802 15 14.5935 14.9183 14.756 14.7558C15.0819 14.43 15.0819 13.9033 14.756 13.5775L11.1785 9.99996Z" fill="#85949E"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="table-nav__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__target">
+                                            <input type="text" placeholder="Действие">
+                                        </div>
+
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-item">Печать договоров</div>
+                                                <div class="custom-select__dropdown-item">Печать уведомлений МВД</div>
+                                                <div class="custom-select__dropdown-item">Скачать договора</div>
+                                                <div class="custom-select__dropdown-item">Скачать уведомления МВД</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="table-nav__btn btn btn-blue">Применить</button>
+                            </div>
+                            <div class="table-nav__right">
+                                <div class='table-nav__search search-field'>
+                                    <input type='text' placeholder="Поиск сотрудника" />
+                                    <button class="search-field__clear">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0607 9.00019L13.2804 5.78044C13.5737 5.48719 13.5737 5.01319 13.2804 4.71994C12.9872 4.42669 12.5132 4.42669 12.2199 4.71994L9.00019 7.93969L5.78044 4.71994C5.48719 4.42669 5.01319 4.42669 4.71994 4.71994C4.42669 5.01319 4.42669 5.48719 4.71994 5.78044L7.93969 9.00019L4.71994 12.2199C4.42669 12.5132 4.42669 12.9872 4.71994 13.2804C4.86619 13.4267 5.05819 13.5002 5.25019 13.5002C5.44219 13.5002 5.63419 13.4267 5.78044 13.2804L9.00019 10.0607L12.2199 13.2804C12.3662 13.4267 12.5582 13.5002 12.7502 13.5002C12.9422 13.5002 13.1342 13.4267 13.2804 13.2804C13.5737 12.9872 13.5737 12.5132 13.2804 12.2199L10.0607 9.00019Z" fill="#B5BCC1"/>
+                                            <mask id="mask0_27_3409" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="10" height="10">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0607 9.00019L13.2804 5.78044C13.5737 5.48719 13.5737 5.01319 13.2804 4.71994C12.9872 4.42669 12.5132 4.42669 12.2199 4.71994L9.00019 7.93969L5.78044 4.71994C5.48719 4.42669 5.01319 4.42669 4.71994 4.71994C4.42669 5.01319 4.42669 5.48719 4.71994 5.78044L7.93969 9.00019L4.71994 12.2199C4.42669 12.5132 4.42669 12.9872 4.71994 13.2804C4.86619 13.4267 5.05819 13.5002 5.25019 13.5002C5.44219 13.5002 5.63419 13.4267 5.78044 13.2804L9.00019 10.0607L12.2199 13.2804C12.3662 13.4267 12.5582 13.5002 12.7502 13.5002C12.9422 13.5002 13.1342 13.4267 13.2804 13.2804C13.5737 12.9872 13.5737 12.5132 13.2804 12.2199L10.0607 9.00019Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0_27_3409)">
+                                            <rect width="18" height="18" fill="#B5BCC1"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <a href="" class="search-field__link">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.25C3.75 5.76825 5.76825 3.75 8.25 3.75C10.7318 3.75 12.75 5.76825 12.75 8.25C12.75 10.7318 10.7318 12.75 8.25 12.75C5.76825 12.75 3.75 10.7318 3.75 8.25ZM15.5302 14.4697L12.984 11.9228C13.7737 10.9073 14.25 9.6345 14.25 8.25C14.25 4.94175 11.5582 2.25 8.25 2.25C4.94175 2.25 2.25 4.94175 2.25 8.25C2.25 11.5582 4.94175 14.25 8.25 14.25C9.6345 14.25 10.9072 13.7738 11.9227 12.984L14.4697 15.5303C14.616 15.6765 14.808 15.75 15 15.75C15.192 15.75 15.384 15.6765 15.5302 15.5303C15.8235 15.237 15.8235 14.763 15.5302 14.4697Z" fill="#B5BCC1"/>
+                                            <mask id="mask0_27_3402" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="14" height="14">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.25C3.75 5.76825 5.76825 3.75 8.25 3.75C10.7318 3.75 12.75 5.76825 12.75 8.25C12.75 10.7318 10.7318 12.75 8.25 12.75C5.76825 12.75 3.75 10.7318 3.75 8.25ZM15.5302 14.4697L12.984 11.9228C13.7737 10.9073 14.25 9.6345 14.25 8.25C14.25 4.94175 11.5582 2.25 8.25 2.25C4.94175 2.25 2.25 4.94175 2.25 8.25C2.25 11.5582 4.94175 14.25 8.25 14.25C9.6345 14.25 10.9072 13.7738 11.9227 12.984L14.4697 15.5303C14.616 15.6765 14.808 15.75 15 15.75C15.192 15.75 15.384 15.6765 15.5302 15.5303C15.8235 15.237 15.8235 14.763 15.5302 14.4697Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0_27_3402)">
+                                            <rect width="18" height="18" fill="#B5BCC1"/>
+                                            </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="table-nav__select2">
+                                    <div class="custom-select">
+                                        <div class="custom-select__target">
+                                            <input type="text" placeholder="Отчеты">
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-item">Название отчета 1</div>
+                                                <div class="custom-select__dropdown-item">Название отчета 2</div>
+                                                <div class="custom-select__dropdown-item">Название отчета 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='staff doc-table'>
+                    <div class='container'>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="table-check__all check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck1">
+                                            <label for="tableCheck1"></label>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__sort">
+                                            <span>Наименование</span>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49998 11.5L4.49998 5.25C4.49998 4.836 4.83523 4.5 5.24998 4.5C5.66473 4.5 5.99998 4.836 5.99998 5.25L5.99998 11.5615L6.31506 11.143C6.56931 10.816 7.04106 10.7567 7.36731 11.011C7.55781 11.1587 7.65756 11.38 7.65756 11.6035C7.65756 11.7647 7.60656 11.9267 7.50006 12.0632L5.84248 14.2097C5.69923 14.395 5.47798 14.5015 5.24323 14.5C5.00998 14.4985 4.79023 14.3875 4.64998 14.2L3.03668 12.0632C2.78843 11.731 2.85518 11.2615 3.18668 11.0132C3.51818 10.765 3.98843 10.8317 4.23668 11.1632L4.49998 11.5ZM17.2885 4.50002H10.4612C10.0697 4.50002 9.75025 4.82027 9.75025 5.21177V5.28827C9.75025 5.67977 10.0697 6.00002 10.4612 6.00002H17.2885C17.68 6.00002 18.0002 5.67977 18.0002 5.28827V5.21177C18.0002 4.82027 17.68 4.50002 17.2885 4.50002ZM10.4612 8.25002H14.7885C15.18 8.25002 15.5002 8.57027 15.5002 8.96177V9.03827C15.5002 9.42976 15.18 9.75001 14.7885 9.75001H10.4612C10.0697 9.75001 9.75025 9.42976 9.75025 9.03827V8.96177C9.75025 8.57027 10.0697 8.25002 10.4612 8.25002ZM10.4612 12H12.2885C12.68 12 13.0002 12.3203 13.0002 12.7118V12.7883C13.0002 13.1798 12.68 13.5 12.2885 13.5H10.4612C10.0697 13.5 9.75025 13.1798 9.75025 12.7883V12.7118C9.75025 12.3203 10.0697 12 10.4612 12Z" fill="#6F7E88"/>
+                                            </svg>
+                                        </div>
+                                    </th>
+                                    <th>Статус</th>
+                                    <th>Сотрудник</th>
+                                    <th>Статус сотрудника</th>
+                                    <th>Юр. лицо</th>
+                                    <th>Посл. изменения</th>
+                                    <th>Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck2">
+                                            <label for="tableCheck2"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Договор</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status">
+                                            <i style="background: #E24930;"></i>
+                                            <span>Нанят</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Худобондаев Юсуф</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status table__status--red">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00073 8.16661C9.00073 8.62661 8.55273 8.99994 8.00073 8.99994C7.44873 8.99994 7.00073 8.62661 7.00073 8.16661V4.83327C7.00073 4.37327 7.44873 3.99994 8.00073 3.99994C8.55273 3.99994 9.00073 4.37327 9.00073 4.83327V8.16661ZM8.00073 11.9999C7.44873 11.9999 7.00073 11.5519 7.00073 10.9999C7.00073 10.4479 7.44873 9.99994 8.00073 9.99994C8.55273 9.99994 9.00073 10.4479 9.00073 10.9999C9.00073 11.5519 8.55273 11.9999 8.00073 11.9999ZM15.0415 10.8686L9.92685 2.38925C9.52752 1.72792 8.80752 1.33325 8.00085 1.33325C7.19418 1.33325 6.47418 1.72792 6.07485 2.38925L0.960186 10.8686C0.581519 11.4973 0.570186 12.2533 0.930186 12.8906C1.31619 13.5753 2.06619 13.9999 2.88619 13.9999H13.1155C13.9355 13.9999 14.6855 13.5753 15.0715 12.8906C15.4315 12.2533 15.4202 11.4973 15.0415 10.8686Z" fill="#E24930"></path>
+                                            </svg>
+                                            <span>Переоформление</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck3">
+                                            <label for="tableCheck3"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Уведомление МВД</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status">
+                                            <i style="background: #E24930;"></i>
+                                            <span>до 24.06.2022</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Мусулмонокулов Шоберды</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status table__status--red">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00073 8.16661C9.00073 8.62661 8.55273 8.99994 8.00073 8.99994C7.44873 8.99994 7.00073 8.62661 7.00073 8.16661V4.83327C7.00073 4.37327 7.44873 3.99994 8.00073 3.99994C8.55273 3.99994 9.00073 4.37327 9.00073 4.83327V8.16661ZM8.00073 11.9999C7.44873 11.9999 7.00073 11.5519 7.00073 10.9999C7.00073 10.4479 7.44873 9.99994 8.00073 9.99994C8.55273 9.99994 9.00073 10.4479 9.00073 10.9999C9.00073 11.5519 8.55273 11.9999 8.00073 11.9999ZM15.0415 10.8686L9.92685 2.38925C9.52752 1.72792 8.80752 1.33325 8.00085 1.33325C7.19418 1.33325 6.47418 1.72792 6.07485 2.38925L0.960186 10.8686C0.581519 11.4973 0.570186 12.2533 0.930186 12.8906C1.31619 13.5753 2.06619 13.9999 2.88619 13.9999H13.1155C13.9355 13.9999 14.6855 13.5753 15.0715 12.8906C15.4315 12.2533 15.4202 11.4973 15.0415 10.8686Z" fill="#E24930"></path>
+                                            </svg>
+                                            <span>Переоформление</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck33">
+                                            <label for="tableCheck33"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Уведомление МВД</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status">
+                                            <i style="background: #E24930;"></i>
+                                            <span>до 24.06.2022</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Мусулмонокулов Шоберды</a>
+                                    </td>
+                                    <td>
+                                        Нанят
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг Плюс</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck4">
+                                            <label for="tableCheck4"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Договор</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status">
+                                            <i style="background: #FFC80A;"></i>
+                                            <span>Новый</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Мусулмонокулов Шоберды</a>
+                                    </td>
+                                    <td>
+                                        Не оформлен
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг Плюс</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck5">
+                                            <label for="tableCheck5"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Договор</a>
+                                    </td>
+                                    <td>
+                                        <div class="table__status">
+                                            <i style="background: #303438;"></i>
+                                            <span>Расторжение</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Мусулмонокулов Шоберды</a>
+                                    </td>
+                                    <td>
+                                        Не оформлен
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг Плюс</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-check__item check">
+                                            <input type="checkbox" class="checkbox" id="tableCheck55">
+                                            <label for="tableCheck55"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Договор</a>
+                                    </td>
+                                    <td>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.424 3.325C11.8793 2.78066 10.996 2.78066 10.4513 3.325L5.51984 8.25681L3.54718 6.28416C3.0025 5.73947 2.11956 5.73947 1.57453 6.28416C1.02984 6.82884 1.02984 7.71212 1.57453 8.25716L4.53299 11.2153C5.07767 11.76 5.9613 11.76 6.50599 11.2153L12.4236 5.29766C12.9686 4.75297 12.9693 3.87003 12.424 3.325Z" fill="#99C11E"></path>
+                                        </svg>
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text semi-bold">Мусулмонокулов Шоберды</a>
+                                    </td>
+                                    <td>
+                                        Не оформлен
+                                    </td>
+                                    <td>
+                                        <a href="" class="blue-text">ТЖ Рекрутинг Плюс</a>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">24.06.2022 в 16:55</span>
+                                    </td>
+                                    <td>
+                                        <div class="table__buttons">
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2521 12.8069C11.2507 12.7881 11.25 12.7691 11.25 12.75V6.75C11.25 6.336 11.5852 6 12 6C12.4148 6 12.75 6.336 12.75 6.75V12.7499L14.55 11.4C14.8815 11.1502 15.3518 11.2185 15.6 11.55C15.849 11.8815 15.7815 12.3517 15.45 12.6L12.45 14.85C12.3173 14.9497 12.1583 15 12 15C11.8493 15 11.6985 14.9542 11.5688 14.8635L8.56875 12.753C8.22975 12.5145 8.148 12.0465 8.3865 11.7082C8.625 11.3692 9.09225 11.2875 9.43125 11.526L11.2521 12.8069ZM7.5 16.5V17.25H16.5V16.5C16.5 16.0875 16.8375 15.75 17.25 15.75C17.6625 15.75 18 16.0875 18 16.5V18C18 18.4125 17.6625 18.75 17.25 18.75H6.75C6.3375 18.75 6 18.4125 6 18V16.5C6 16.0875 6.3375 15.75 6.75 15.75C7.1625 15.75 7.5 16.0875 7.5 16.5Z" fill="#85949E"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button class="table__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 15.3702C17.9999 15.6564 17.7782 15.8889 17.5044 15.8889H16.8332V14.3334C16.8332 13.4755 16.1356 12.7778 15.2777 12.7778H8.27766C7.41977 12.7778 6.72211 13.4755 6.72211 14.3334V15.8889H6.05088C5.77711 15.8889 5.55544 15.6564 5.55544 15.3702V10.1855C5.55544 9.89927 5.77711 9.66671 6.05088 9.66671H7.11099H8.66655H14.8888H16.4443H17.5044C17.7782 9.66671 17.9999 9.89927 17.9999 10.1855V15.3702ZM8.27798 17.4444V14.3333H15.278L15.2795 17.4444H8.27798ZM8.67781 6.55557H14.8891V8.11113H8.67236L8.67781 6.55557ZM17.5046 8.11111H16.4444V6.55556C16.4444 5.69767 15.8051 5 15.0188 5H8.53678C7.75044 5 7.11111 5.69767 7.11111 6.55556V8.11111H6.051C4.92011 8.11111 4 9.04133 4 10.1854V15.3701C4 16.5142 4.92011 17.4444 6.051 17.4444H6.72222C6.72222 18.3023 7.41989 19 8.27778 19H15.2778C16.1357 19 16.8333 18.3023 16.8333 17.4444H17.5046C18.6354 17.4444 19.5556 16.5142 19.5556 15.3701V10.1854C19.5556 9.04133 18.6354 8.11111 17.5046 8.11111Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class='table-bottom'>
+                    <div class='container'>
+                        <div class='table-bottom__inner'>
+                            <div class="table-bottom__left">
+                                <div class="table-bottom__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__target">
+                                            <input type="text" value="10">
+                                        </div>
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-item">10</div>
+                                                <div class="custom-select__dropdown-item">20</div>
+                                                <div class="custom-select__dropdown-item">30</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="table-bottom__select-title">строк на странице</span>
+                            </div>
+
+                            <div class="table-bottom__right">
+                                <div class="pagination">
+                                    <a href="" class="pagination__btn pagination__btn--prev pagination__btn--disabled btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#1C7BBB"/>
+                                        </svg>
+                                        <span>Предыдущая</span>
+                                    </a>
+                                    <a href="" class="pagination__item pagination__item--active btn">1</a>
+                                    <a href="" class="pagination__item btn">2</a>
+                                    <a href="" class="pagination__item btn">3</a>
+                                    <a href="" class="pagination__item btn">...</a>
+                                    <a href="" class="pagination__item btn">14</a>
+                                    <a href="" class="pagination__btn pagination__btn--next btn">
+                                        <span>Следующая</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33291 15.8333C8.14458 15.8333 7.95541 15.7699 7.79958 15.6399C7.44625 15.3458 7.39875 14.8199 7.69291 14.4666L11.4229 9.99077L7.82708 5.52244C7.53875 5.16411 7.59541 4.63911 7.95375 4.35077C8.31291 4.06244 8.83708 4.11911 9.12625 4.47744L13.1496 9.47744C13.3979 9.7866 13.3946 10.2283 13.1404 10.5333L8.97375 15.5333C8.80875 15.7308 8.57208 15.8333 8.33291 15.8333Z" fill="#1C7BBB"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

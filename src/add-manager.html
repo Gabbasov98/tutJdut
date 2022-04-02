@@ -1,0 +1,380 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Добавить сотрудника", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"status":"manager","active":"staff"})
+            <main class="content">
+
+                <section class='worker-top'>
+                    <div class='container'>
+                        <div class="worker-top__inner">
+                            <a href="" class="worker-top__link btn">
+                                <i>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#85949E"/>
+                                </svg>
+                            </i>
+                                <span>Добавить менеджера</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='add-worker'>
+                    <div class='container'>
+                        <div class='add-worker__inner'>
+                            <div class="add-worker__left">
+                                <div class="worker-sidebar">
+                                    <div class="worker-sidebar__bottom">
+                                        <div class="worker-sidebar__links">
+                                            <a href="#docs" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Документы</span>
+                                            </a>
+                                            <a href="#yur" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Юр.лицо для оформления</span>
+                                            </a>
+                                            <a href="#object" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Объект для работы/span>
+                                            </a>
+                                            <a href="#prof" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Должность</span>
+                                            </a>
+                                            <a href="#access" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Настройки доступа</span>
+                                            </a>
+                                            <a href="#info" class="worker-sidebar__link worker-sidebar__link--active">
+                                                <i></i>
+                                                <span>Личная информация </span>
+                                            </a>
+                                        </div>
+                                        <button class="worker-sidebar__btn btn btn-blue">Сохранить карточку</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-worker__right">
+                                <div id="info" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Личная информация</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid">
+                                        <fieldset class='form-group add-worker__field--double'>
+                                            <label>ФИО</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Телефон</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Доп. телефон</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Электронная почта</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Telegram</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="add-worker__img-block">
+                                            <div class="add-worker__img">
+                                                <div class="add-worker__img-upload">
+                                                    <input type="file" name="" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="access" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Настройки доступа</h3>
+                                        <div class="add-worker__step-check check">
+                                            <input type='checkbox' class='checkbox' id='c232' />
+                                            <label for='c232'>Отправить письмо с данными на указанную почту</label>
+                                        </div>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__step-grid--three">
+
+                                        <fieldset class='form-group'>
+                                            <label>Логин/e-mail</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Пароль</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="add-worker__pass">
+                                            <button class="add-worker__pass-btn btn btn-grey-outline">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.75">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.069 8.60504C18.0629 8.61828 18.0569 8.63153 18.0512 8.645C18.0455 8.65896 18.041 8.67352 18.0365 8.68804C18.0292 8.71167 18.022 8.73519 18.0096 8.75583C17.9849 8.79669 17.9527 8.83098 17.9204 8.86539C17.9112 8.8752 17.902 8.88502 17.8929 8.895C17.8828 8.90543 17.8739 8.91688 17.865 8.92831C17.8525 8.94428 17.8401 8.96022 17.8246 8.97333C17.7779 9.01145 17.724 9.03795 17.6702 9.06435C17.6664 9.06624 17.6626 9.06812 17.6587 9.07C17.6474 9.07551 17.6366 9.08244 17.6258 9.08938C17.6104 9.09925 17.595 9.10913 17.5779 9.115C17.4879 9.14833 17.3921 9.16667 17.2929 9.16667C17.2479 9.16667 17.2012 9.16333 17.1554 9.155L13.6137 8.5675C13.1596 8.4925 12.8529 8.06333 12.9279 7.60917C13.0029 7.15583 13.4312 6.845 13.8862 6.92417L15.2562 7.15083C14.2187 5.32917 12.2379 4.16667 10.0579 4.16667C7.59208 4.16667 5.41958 5.59833 4.52208 7.8125C4.39124 8.1375 4.07874 8.33333 3.74958 8.33333C3.64541 8.33333 3.53958 8.31417 3.43708 8.2725C3.01041 8.1 2.80458 7.61417 2.97791 7.1875C4.13124 4.34 6.91041 2.5 10.0579 2.5C12.9012 2.5 15.4854 4.05833 16.7896 6.49L17.0971 4.84583C17.1821 4.39417 17.6187 4.095 18.0696 4.18167C18.5221 4.26583 18.8204 4.70167 18.7354 5.15417L18.1112 8.4875C18.1032 8.53001 18.0861 8.56751 18.069 8.60504ZM15.4778 12.1877C15.6503 11.7602 16.137 11.5552 16.5628 11.7277C16.9895 11.9002 17.1953 12.386 17.022 12.8127C15.8687 15.6602 13.0895 17.5002 9.942 17.5002C7.09866 17.5002 4.5145 15.9418 3.21033 13.5102L2.902 15.1535C2.82783 15.5543 2.47783 15.8335 2.08366 15.8335C2.03283 15.8335 1.98116 15.8285 1.9295 15.8185C1.477 15.7343 1.1795 15.2985 1.2645 14.846L1.88866 11.5127C1.895 11.4799 1.90902 11.4509 1.92312 11.4217C1.93127 11.4048 1.93944 11.3879 1.94616 11.3702C1.95275 11.3536 1.95851 11.3364 1.96427 11.3192C1.97674 11.2819 1.98925 11.2446 2.01033 11.2127C2.02263 11.1937 2.03871 11.1785 2.05489 11.1633C2.06502 11.1537 2.07519 11.1441 2.0845 11.1335C2.09183 11.125 2.09909 11.1164 2.10634 11.1079C2.146 11.0612 2.1853 11.0148 2.23533 10.981C2.24024 10.9774 2.24611 10.9753 2.25191 10.9732C2.25694 10.9714 2.26191 10.9695 2.26616 10.9668C2.347 10.9143 2.43366 10.8735 2.5295 10.8527C2.53533 10.8513 2.54141 10.8517 2.54747 10.852C2.55266 10.8523 2.55783 10.8526 2.56283 10.8518C2.6545 10.8368 2.747 10.8277 2.8445 10.8443L6.38616 11.4327C6.84033 11.5068 7.147 11.9368 7.072 12.391C7.0045 12.7985 6.65116 13.0877 6.25033 13.0877C6.20533 13.0877 6.1595 13.0843 6.11366 13.076L4.74366 12.8493C5.78116 14.671 7.762 15.8335 9.942 15.8335C12.4078 15.8335 14.5803 14.4018 15.4778 12.1877Z" fill="#85949E"/>
+                                                    </g>
+                                                </svg>
+                                                <span>Сгенерировать</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="prof" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Должность</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__step-grid--two">
+                                        <fieldset class='form-group'>
+                                            <label>Тип менеджера</label>
+                                            <div class="custom-select">
+                                                <div class="custom-select__target">
+                                                    <input type="text" placeholder="Выберите тип">
+                                                </div>
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item">Тип</div>
+                                                        <div class="custom-select__dropdown-item">Тип 2</div>
+                                                        <div class="custom-select__dropdown-item">Тип 3</div>
+                                                        <div class="custom-select__dropdown-item">Тип 4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div id="object" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Ответственные объекты</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__step-grid--six">
+                                        <div class="add-worker__field add-worker__field--double">
+                                            <button class="add-worker__object-btn btn btn-grey-outline" data-bs-toggle="modal" data-bs-target="#selectObject">
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.75">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3252 16.6665H13.8335V10.8332C13.8335 10.3724 13.4602 9.99988 13.0002 9.99988H8.00017C7.53933 9.99988 7.16683 10.3724 7.16683 10.8332V16.6665H4.66683L4.67183 9.65238L10.4985 3.69322L16.3335 9.68655L16.3252 16.6665ZM8.8335 16.6665H12.1668V11.6665H8.8335V16.6665ZM17.5202 8.48738L11.096 1.91738C10.7818 1.59655 10.2185 1.59655 9.90433 1.91738L3.47933 8.48822C3.17517 8.80072 3.00017 9.23738 3.00017 9.68655V16.6665C3.00017 17.5857 3.706 18.3332 4.5735 18.3332H8.00017H13.0002H16.426C17.2935 18.3332 18.0002 17.5857 18.0002 16.6665V9.68655C18.0002 9.23738 17.8252 8.80072 17.5202 8.48738Z" fill="#85949E"/>
+                                                    </g>
+                                                </svg>
+                                                <span>Выбрать объект</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="add-worker__table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Наименование</th>
+                                                    <th>Адрес</th>
+                                                    <th>Контакт</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="" class="blue-text semi-bold">Askona обухово</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">п. Обухово, 1-й Стрелковый переулок вл.6 стр.1м</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="grey-text lh18">
+                                                            <span class="d-block">Ермолаев Дмитрий Николаевич </span> +7 977 109-44-53 <a href="mailto:sakichev@altali.ru" class="blue-text">sakichev@altali.ru</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="table__delete">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.5">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15C10.5 15.4125 10.1625 15.75 9.75 15.75C9.3375 15.75 9 15.4125 9 15V12C9 11.5875 9.3375 11.25 9.75 11.25C10.1625 11.25 10.5 11.5875 10.5 12V15ZM15 15C15 15.4125 14.6625 15.75 14.25 15.75C13.8375 15.75 13.5 15.4125 13.5 15V12C13.5 11.5875 13.8375 11.25 14.25 11.25C14.6625 11.25 15 11.5875 15 12V15ZM16.5 17.25C16.5 17.6632 16.164 18 15.75 18H8.25C7.836 18 7.5 17.6632 7.5 17.25V9H16.5V17.25ZM10.5 6.246C10.5 6.12975 10.6605 6 10.875 6H13.125C13.3395 6 13.5 6.12975 13.5 6.246V7.5H10.5V6.246ZM18.75 7.5H18H15V6.246C15 5.283 14.1593 4.5 13.125 4.5H10.875C9.84075 4.5 9 5.283 9 6.246V7.5H6H5.25C4.8375 7.5 4.5 7.8375 4.5 8.25C4.5 8.6625 4.8375 9 5.25 9H6V17.25C6 18.4905 7.0095 19.5 8.25 19.5H15.75C16.9905 19.5 18 18.4905 18 17.25V9H18.75C19.1625 9 19.5 8.6625 19.5 8.25C19.5 7.8375 19.1625 7.5 18.75 7.5Z" fill="#85949E"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div id="yur" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Юридическое лицо для оформления</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__step-grid--two">
+                                        <fieldset class='form-group'>
+                                            <label>Юридическое лицо</label>
+                                            <div class="custom-select">
+                                                <div class="custom-select__target">
+                                                    <input type="text" placeholder="Выбрать юр.лицо">
+                                                </div>
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item">Юр.лицо</div>
+                                                        <div class="custom-select__dropdown-item">Юр.лицо 2</div>
+                                                        <div class="custom-select__dropdown-item">Юр.лицо 3</div>
+                                                        <div class="custom-select__dropdown-item">Юр.лицо 4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div id="docs" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Документы</h3>
+                                    </div>
+                                    <div class="add-worker__groups">
+                                        <div class="add-worker__group add-worker__group--full">
+                                            <h4 class="add-worker__group-title">Паспорт</h4>
+                                            <div class="add-worker__group-grid add-worker__group-grid--three">
+                                                <fieldset class='form-group'>
+                                                    <label>Серия и номер</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group'>
+                                                    <label>Дата выдачи</label>
+                                                    <div class="date-input">
+                                                        <input type='text' />
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class='form-group'>
+                                                    <label>Место рождения</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group add-worker__field--14'>
+                                                    <label>Кем выдан</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <div class="add-worker__upload add-worker__upload--p10 add-worker__field--14">
+                                                    <div class="add-worker__file file-input">
+                                                        <input type="file" name="" id="file2" accept="image/jpeg,image/png,image/gif">
+                                                        <label for="file2">Загрузить фото/скан</label>
+                                                    </div>
+                                                    <div class="add-worker__uploaded">
+                                                        <div class="add-worker__uploaded-item">
+                                                            <span>passport1.jpg</span>
+                                                            <button class="add-worker__uploaded-item-delete">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.75">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1785 9.00021L13.756 5.42271C14.0819 5.09687 14.0819 4.57021 13.756 4.24437C13.4302 3.91854 12.9035 3.91854 12.5777 4.24437L9.00021 7.82187L5.42271 4.24437C5.09688 3.91854 4.57021 3.91854 4.24438 4.24437C3.91854 4.57021 3.91854 5.09687 4.24438 5.42271L7.82188 9.00021L4.24438 12.5777C3.91854 12.9035 3.91854 13.4302 4.24438 13.756C4.40688 13.9185 4.62021 14.0002 4.83354 14.0002C5.04688 14.0002 5.26021 13.9185 5.42271 13.756L9.00021 10.1785L12.5777 13.756C12.7402 13.9185 12.9535 14.0002 13.1669 14.0002C13.3802 14.0002 13.5935 13.9185 13.756 13.756C14.0819 13.4302 14.0819 12.9035 13.756 12.5777L10.1785 9.00021Z" fill="#85949E"/>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="add-worker__uploaded-item">
+                                                            <span>passport111111dd.jpg</span>
+                                                            <button class="add-worker__uploaded-item-delete">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g opacity="0.75">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1785 9.00021L13.756 5.42271C14.0819 5.09687 14.0819 4.57021 13.756 4.24437C13.4302 3.91854 12.9035 3.91854 12.5777 4.24437L9.00021 7.82187L5.42271 4.24437C5.09688 3.91854 4.57021 3.91854 4.24438 4.24437C3.91854 4.57021 3.91854 5.09687 4.24438 5.42271L7.82188 9.00021L4.24438 12.5777C3.91854 12.9035 3.91854 13.4302 4.24438 13.756C4.40688 13.9185 4.62021 14.0002 4.83354 14.0002C5.04688 14.0002 5.26021 13.9185 5.42271 13.756L9.00021 10.1785L12.5777 13.756C12.7402 13.9185 12.9535 14.0002 13.1669 14.0002C13.3802 14.0002 13.5935 13.9185 13.756 13.756C14.0819 13.4302 14.0819 12.9035 13.756 12.5777L10.1785 9.00021Z" fill="#85949E"/>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="add-worker__groups">
+                                        <div class="add-worker__group">
+                                            <h4 class="add-worker__group-title">ИНН</h4>
+                                            <div class="add-worker__group-grid">
+                                                <fieldset class='form-group'>
+                                                    <label>Номер</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <div class="add-worker__upload add-worker__upload--double">
+                                                    <div class="add-worker__file upload-one file-input">
+                                                        <input type="file" name="" id="file6" accept="image/jpeg,image/png,image/gif">
+                                                        <label for="file6">Загрузить фото/скан</label>
+                                                    </div>
+                                                    <div class="add-worker__uploaded">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-worker__group">
+                                            <h4 class="add-worker__group-title">СНИЛС</h4>
+                                            <div class="add-worker__group-grid">
+                                                <fieldset class='form-group'>
+                                                    <label>Номер</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <div class="add-worker__upload add-worker__upload--double">
+                                                    <div class="add-worker__file upload-one file-input">
+                                                        <input type="file" name="" id="file7" accept="image/jpeg,image/png,image/gif">
+                                                        <label for="file7">Загрузить фото/скан</label>
+                                                    </div>
+                                                    <div class="add-worker__uploaded">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-worker__groups">
+                                        <div class="add-worker__group add-worker__group--full">
+                                            <div class="add-worker__group-top">
+                                                <h4 class="add-worker__group-title">Банковская карта</h4>
+                                                <div class="add-worker__group-check check">
+                                                    <input type='checkbox' id='c1111' />
+                                                    <label for='c1111'>Запросить в бухгалтерии</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="add-worker__group-grid add-worker__group-grid--six">
+                                                <fieldset class='form-group add-worker__field--double'>
+                                                    <label>Номер</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group'>
+                                                    <label>БИК</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group add-worker__field--treble'>
+                                                    <label>Банк</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group add-worker__field--double'>
+                                                    <label>Номер счета карты</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group'>
+                                                    <label>ИНН</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group'>
+                                                    <label>КПП</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                                <fieldset class='form-group add-worker__field--double-last'>
+                                                    <label>Корр. счет</label>
+                                                    <input type='text' />
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.display1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.blue-text {
+    color: #1C7BBB !important;
+}
+
+a.blue-text {
+    &:hover {
+        color: #469EDA !important;
+    }
+    &:active {
+        color: #1C7BBB !important;
+    }
+}
+
+.grey-text {
+    color: #85949E;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.red-text {
+    color: $red;
+}
+
+.orange-text {
+    color: #E48D00;
+}

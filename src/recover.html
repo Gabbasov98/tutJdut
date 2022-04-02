@@ -1,0 +1,25 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Восстановление пароля", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="auth">
+
+        <div class="auth__wrap">
+            <img src="img/auth-icon.svg" alt="" class="auth__icon">
+            <h1 class="display1">Восстановить</h1>
+            <form class="auth__form">
+                <fieldset class='form-group auth__form-group'>
+                    <label>Логин, используемый для входа</label>
+                    <input type='text' />
+                </fieldset>
+                <button class="auth__btn btn btn-blue">Отправить</button>
+            </form>
+            <a href="" class="auth__link grey-text semi-bold">Я вспомнил пароль</a>
+        </div>
+
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

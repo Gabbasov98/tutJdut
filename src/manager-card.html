@@ -1,0 +1,821 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Карточка менеджера", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"status":"manager","active":"managers"})
+            <main class="content">
+                <div class="migrant">
+                    <section class='migrant-top'>
+                        <div class='container'>
+                            <div class='migrant-top__inner'>
+                                <a href="" class="migrant-top__back btn semi-bold">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2406 4.16673C12.4315 4.16673 12.6233 4.23006 12.7813 4.36006C13.1395 4.65423 13.1876 5.18006 12.8894 5.53339L9.10804 10.0092L12.7534 14.4776C13.0457 14.8359 12.9882 15.3609 12.625 15.6492C12.2609 15.9376 11.7295 15.8809 11.4363 15.5226L7.3576 10.5226C7.10585 10.2134 7.10923 9.77173 7.36689 9.46673L11.5909 4.46673C11.7582 4.26923 11.9981 4.16673 12.2406 4.16673Z" fill="#85949E"/>
+                                </svg>
+                                    <span>Назад к списку</span>
+                                </a>
+                                <div class="migrant-top__info">
+                                    <div class="migrant-top__info-item">
+                                        <span class="migrant-top__info-title grey-text">Трудоустроен </span>
+                                        <a href="" class="migrant-top__info-desc blue-text semi-bold"> ООО ТЖ Рекрутинг</a>
+                                    </div>
+                                    <div class="migrant-top__info-item grey-text">
+                                        <span class="migrant-top__info-title">Добавлен </span>
+                                        <span class="migrant-top__info-desc semi-bold"> 08.12.2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class='migrant-info'>
+                        <div class='container'>
+                            <div class='migrant-info__inner'>
+                                <div class="migrant-info__left">
+                                    <div class="migrant-info__img">
+                                        <img src="img/manager.jpg" alt="">
+                                    </div>
+                                    <div class="migrant-info__personal">
+                                        <button class="migrant-info__personal-edit icon-btn">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.75">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <h1 class="migrant-info__name2">Худобондаев Юсуф Давлатбекович</h1>
+                                        <div class="migrant-info__badges">
+                                            <div class="migrant-info__badge" style="background: #99C11E;
+                                        box-shadow: 0px 2px 4px rgba(112, 149, 1, 0.25);">Работает</div>
+                                            <div class="migrant-info__badge">Менеджер по объектам </div>
+                                        </div>
+                                        <div class="migrant-info__objects">
+                                            <span class="migrant-info__item2-title">Ответственные объекты</span>
+                                            <div class="migrant-info__objects-items">
+                                                <a href="" class="migrant-info__objects-item blue-text">Askona обухово</a>
+                                                <a href="" class="migrant-info__objects-item blue-text">ЖК Солнечный ветер</a>
+                                                <a href="" class="migrant-info__objects-item blue-text">ПР Стекломонтаж</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="migrant-info__right">
+                                    <div class="migrant-info__items">
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">Статус табеля</span>
+                                            <strong class="migrant-info__item-desc red-text">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00073 8.16661C9.00073 8.62661 8.55273 8.99994 8.00073 8.99994C7.44873 8.99994 7.00073 8.62661 7.00073 8.16661V4.83327C7.00073 4.37327 7.44873 3.99994 8.00073 3.99994C8.55273 3.99994 9.00073 4.37327 9.00073 4.83327V8.16661ZM8.00073 11.9999C7.44873 11.9999 7.00073 11.5519 7.00073 10.9999C7.00073 10.4479 7.44873 9.99994 8.00073 9.99994C8.55273 9.99994 9.00073 10.4479 9.00073 10.9999C9.00073 11.5519 8.55273 11.9999 8.00073 11.9999ZM15.0415 10.8686L9.92685 2.38925C9.52752 1.72792 8.80752 1.33325 8.00085 1.33325C7.19418 1.33325 6.47418 1.72792 6.07485 2.38925L0.960186 10.8686C0.581519 11.4973 0.570186 12.2533 0.930186 12.8906C1.31619 13.5753 2.06619 13.9999 2.88619 13.9999H13.1155C13.9355 13.9999 14.6855 13.5753 15.0715 12.8906C15.4315 12.2533 15.4202 11.4973 15.0415 10.8686Z" fill="#E24930"/>
+                                                </svg>
+                                                <span>1 просрочен</span>
+                                            </strong>
+                                        </div>
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">Заявок обработано</span>
+                                            <strong class="migrant-info__item-desc">265</strong>
+                                        </div>
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">Сотрудников нанято</span>
+                                            <strong class="migrant-info__item-desc">598</strong>
+                                        </div>
+                                    </div>
+                                    <div class="migrant-info__items">
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">Телефон</span>
+                                            <strong class="migrant-info__item-desc">+7 977 109-44-53</strong>
+                                        </div>
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">E-mail</span>
+                                            <strong class="migrant-info__item-desc">ermakov@mail.ru</strong>
+                                        </div>
+                                        <div class="migrant-info__item">
+                                            <span class="migrant-info__item-title">Telegram</span>
+                                            <a href="" class="migrant-info__item-desc blue-text">@hudobandaev68</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class='migrant-detail manager-detail'>
+                        <div class='container'>
+                            <div class='migrant-detail__inner tab-parent'>
+                                <div class="tabs">
+                                    <div class="tab tab--active" data-tab-path="1">Табели</div>
+                                    <div class="tab" data-tab-path="2">Документы</div>
+                                    <div class="tab" data-tab-path="3">объекты</div>
+                                    <div class="tab" data-tab-path="4">настройки</div>
+                                </div>
+
+                                <div class="tab__content tab__content--active" data-tab-path="1">
+                                    <div class="filter">
+                                        <div class="filter__inner">
+                                            <div class="filter__title">Показывать:</div>
+                                            <div class="filter__item">
+                                                <div class="filter__check check filter__check--work">
+                                                    <input type="checkbox" class="checkbox" id="filter100">
+                                                    <label for="filter100">
+                                                        Не утвержденные
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="filter__item">
+                                                <div class="filter__check check filter__check--work">
+                                                    <input type="checkbox" class="checkbox" id="filter101">
+                                                    <label for="filter101">
+                                                        На проверке
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="staff staff-table-manager">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="table__sort">
+                                                            <span>Дата</span>
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49998 11.5L4.49998 5.25C4.49998 4.836 4.83523 4.5 5.24998 4.5C5.66473 4.5 5.99998 4.836 5.99998 5.25L5.99998 11.5615L6.31506 11.143C6.56931 10.816 7.04106 10.7567 7.36731 11.011C7.55781 11.1587 7.65756 11.38 7.65756 11.6035C7.65756 11.7647 7.60656 11.9267 7.50006 12.0632L5.84248 14.2097C5.69923 14.395 5.47798 14.5015 5.24323 14.5C5.00998 14.4985 4.79023 14.3875 4.64998 14.2L3.03668 12.0632C2.78843 11.731 2.85518 11.2615 3.18668 11.0132C3.51818 10.765 3.98843 10.8317 4.23668 11.1632L4.49998 11.5ZM17.2885 4.50002H10.4612C10.0697 4.50002 9.75025 4.82027 9.75025 5.21177V5.28827C9.75025 5.67977 10.0697 6.00002 10.4612 6.00002H17.2885C17.68 6.00002 18.0002 5.67977 18.0002 5.28827V5.21177C18.0002 4.82027 17.68 4.50002 17.2885 4.50002ZM10.4612 8.25002H14.7885C15.18 8.25002 15.5002 8.57027 15.5002 8.96177V9.03827C15.5002 9.42976 15.18 9.75001 14.7885 9.75001H10.4612C10.0697 9.75001 9.75025 9.42976 9.75025 9.03827V8.96177C9.75025 8.57027 10.0697 8.25002 10.4612 8.25002ZM10.4612 12H12.2885C12.68 12 13.0002 12.3203 13.0002 12.7118V12.7883C13.0002 13.1798 12.68 13.5 12.2885 13.5H10.4612C10.0697 13.5 9.75025 13.1798 9.75025 12.7883V12.7118C9.75025 12.3203 10.0697 12 10.4612 12Z" fill="#6F7E88"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </th>
+                                                    <th>Статус</th>
+                                                    <th>Объект</th>
+                                                    <th>Сотруд.</th>
+                                                    <th>Часов</th>
+                                                    <th>Смен</th>
+                                                    <th>Начисл. 1-15</th>
+                                                    <th>Нач. за мес.</th>
+                                                    <th>Выдано</th>
+                                                    <th>Остаток</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="" class="blue-text semi-bold">Январь 2022</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="bold red-text">Не заполнен</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="blue-text">Askona Обухово</a>
+                                                    </td>
+                                                    <td>
+                                                        39
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">-</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="" class="blue-text semi-bold">Январь 2022</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="bold">На проверке</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="blue-text">Askona Обухово</a>
+                                                    </td>
+                                                    <td>
+                                                        39
+                                                    </td>
+                                                    <td>756</td>
+                                                    <td>94</td>
+                                                    <td>2 256 954</td>
+                                                    <td>1 895 210</td>
+                                                    <td>3 100 000</td>
+                                                    <td>1 596 230</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="" class="blue-text semi-bold">Январь 2022</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="grey-text">Утвержден</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="blue-text">Askona Обухово</a>
+                                                    </td>
+                                                    <td>
+                                                        39
+                                                    </td>
+                                                    <td>756</td>
+                                                    <td>94</td>
+                                                    <td>2 256 954</td>
+                                                    <td>1 895 210</td>
+                                                    <td>3 100 000</td>
+                                                    <td>1 596 230</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <section class="table-bottom">
+                                            <div class="table-bottom__inner">
+                                                <div class="table-bottom__left">
+                                                    <div class="table-bottom__select">
+                                                        <div class="custom-select">
+                                                            <div class="custom-select__target">
+                                                                <input type="text" value="10">
+                                                            </div>
+                                                            <div class="custom-select__dropdown">
+                                                                <div class="custom-select__dropdown-inner">
+                                                                    <div class="custom-select__dropdown-item">10</div>
+                                                                    <div class="custom-select__dropdown-item">20</div>
+                                                                    <div class="custom-select__dropdown-item">30</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="table-bottom__select-title">строк на странице</span>
+                                                </div>
+
+                                                <div class="table-bottom__right">
+                                                    <div class="pagination">
+                                                        <a href="" class="pagination__btn pagination__btn--prev pagination__btn--disabled btn">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#1C7BBB"></path>
+                                                                </svg>
+                                                            <span>Предыдущая</span>
+                                                        </a>
+                                                        <a href="" class="pagination__item pagination__item--active btn">1</a>
+                                                        <a href="" class="pagination__item btn">2</a>
+                                                        <a href="" class="pagination__item btn">3</a>
+                                                        <a href="" class="pagination__item btn">...</a>
+                                                        <a href="" class="pagination__item btn">14</a>
+                                                        <a href="" class="pagination__btn pagination__btn--next btn">
+                                                            <span>Следующая</span>
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33291 15.8333C8.14458 15.8333 7.95541 15.7699 7.79958 15.6399C7.44625 15.3458 7.39875 14.8199 7.69291 14.4666L11.4229 9.99077L7.82708 5.52244C7.53875 5.16411 7.59541 4.63911 7.95375 4.35077C8.31291 4.06244 8.83708 4.11911 9.12625 4.47744L13.1496 9.47744C13.3979 9.7866 13.3946 10.2283 13.1404 10.5333L8.97375 15.5333C8.80875 15.7308 8.57208 15.8333 8.33291 15.8333Z" fill="#1C7BBB"></path>
+                                                                </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="2">
+                                    <div class="manager-detail__content">
+                                        <div class="migrant-docs">
+                                            <div class="migrant-doc migrant-doc--full">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">Банковская карта</div>
+                                                    </div>
+                                                    <div class="migrant-doc__buttons">
+                                                        <button class="migrant-doc__btn" data-bs-toggle="modal" data-bs-target="#changeBankCard">
+                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g opacity="0.75">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="migrant-doc__grid">
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Номер карты</span>
+                                                                <span class="migrant-doc__item-desc">4276596875489512</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Номер карты</span>
+                                                                <span class="migrant-doc__item-desc">30101810500000000649</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Счет карты</span>
+                                                                <span class="migrant-doc__item-desc">40817810456007847713</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Банк получателя</span>
+                                                                <span class="migrant-doc__item-desc">Московский банк Сбербанка России г. Москва</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">КПП</span>
+                                                                <span class="migrant-doc__item-desc">642422001</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">БИК</span>
+                                                                <span class="migrant-doc__item-desc">0447589569</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">ИНН</span>
+                                                                <span class="migrant-doc__item-desc">7707083893</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="migrant-doc migrant-doc--full">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">Паспорт</div>
+                                                    </div>
+                                                    <div class="migrant-doc__buttons">
+                                                        <button class="migrant-doc__btn" data-bs-toggle="modal" data-bs-target="#changePassport">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.75">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="migrant-doc__grid">
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Серия и номер</span>
+                                                                <span class="migrant-doc__item-desc">8952   689 525</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Скан/фото</span>
+                                                                <button class="migrant-doc__item-desc migrant-doc__item-btn" data-bs-toggle="modal" data-bs-target="#docModal3">Посмотреть 4 файла</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Дата выдачи</span>
+                                                                <span class="migrant-doc__item-desc">26.03.1995</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Действует до</span>
+                                                                <span class="migrant-doc__item-desc">25.03.2025</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items migrant-doc__items--50">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Кем выдан</span>
+                                                                <span class="migrant-doc__item-desc">МВД Республики Узбекистан, Ташкент, яккасарайский район, ул. Раджабий, 1</span>
+                                                            </div>
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Место рождения</span>
+                                                                <span class="migrant-doc__item-desc">Якасарайский район, с. Раджабий</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="migrant-doc">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">ИНН</div>
+                                                    </div>
+                                                    <div class="migrant-doc__buttons">
+                                                        <button class="migrant-doc__btn">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.75">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="migrant-doc__grid migrant-doc__grid--half">
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Номер</span>
+                                                                <span class="migrant-doc__item-desc">526317984689</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Скан/фото</span>
+                                                                <button class="migrant-doc__item-desc migrant-doc__item-btn" data-bs-toggle="modal" data-bs-target="#docModal2">Посмотреть файл</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="migrant-doc migrant-doc--second">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">СНИЛС</div>
+                                                    </div>
+                                                    <div class="migrant-doc__buttons">
+                                                        <button class="migrant-doc__btn">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.75">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="migrant-doc__grid migrant-doc__grid--half">
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Номер</span>
+                                                                <span class="migrant-doc__item-desc">480 953 512 08</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Скан/фото</span>
+                                                                <button class="migrant-doc__item-desc migrant-doc__item-btn" data-bs-toggle="modal" data-bs-target="#docModal2">Посмотреть файл</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab__content" data-tab-path="3">
+                                    <div class="manager-detail__content">
+                                        <div class="migrant-doc">
+                                            <div class="migrant-doc__top">
+                                                <div class="migrant-doc__top-left">
+                                                    <div class="migrant-doc__title">Ответственные объекты</div>
+                                                </div>
+                                                <div class="migrant-doc__buttons">
+                                                    <button class="migrant-doc__add migrant-doc__btn">
+                                                <span>Добавить</span>
+                                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4997 9.0835H10.6663V7.25016C10.6663 6.746 10.2538 6.3335 9.74967 6.3335C9.24551 6.3335 8.83301 6.746 8.83301 7.25016V9.0835H6.99967C6.49551 9.0835 6.08301 9.496 6.08301 10.0002C6.08301 10.5043 6.49551 10.9168 6.99967 10.9168H8.83301V12.7502C8.83301 13.2543 9.24551 13.6668 9.74967 13.6668C10.2538 13.6668 10.6663 13.2543 10.6663 12.7502V10.9168H12.4997C13.0038 10.9168 13.4163 10.5043 13.4163 10.0002C13.4163 9.496 13.0038 9.0835 12.4997 9.0835ZM9.74967 17.3335C5.70626 17.3335 2.41634 14.0436 2.41634 10.0002C2.41634 5.95675 5.70626 2.66683 9.74967 2.66683C13.7931 2.66683 17.083 5.95675 17.083 10.0002C17.083 14.0436 13.7931 17.3335 9.74967 17.3335ZM9.74967 0.833496C4.69517 0.833496 0.583008 4.94566 0.583008 10.0002C0.583008 15.0547 4.69517 19.1668 9.74967 19.1668C14.8042 19.1668 18.9163 15.0547 18.9163 10.0002C18.9163 4.94566 14.8042 0.833496 9.74967 0.833496Z" fill="#85949E"></path>
+                                                </svg>
+                                            </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="migrant-doc__bottom">
+                                                <div class="migrant-doc__table">
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Наименование</th>
+                                                                <th>Табели</th>
+                                                                <th>Работают</th>
+                                                                <th>Требуются</th>
+                                                                <th>Адрес</th>
+                                                                <th>Контактное лицо</th>
+                                                                <th>Действия</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="" class="blue-text semi-bold">Askona обухово</a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table__status table__status--red">
+                                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00073 8.16661C9.00073 8.62661 8.55273 8.99994 8.00073 8.99994C7.44873 8.99994 7.00073 8.62661 7.00073 8.16661V4.83327C7.00073 4.37327 7.44873 3.99994 8.00073 3.99994C8.55273 3.99994 9.00073 4.37327 9.00073 4.83327V8.16661ZM8.00073 11.9999C7.44873 11.9999 7.00073 11.5519 7.00073 10.9999C7.00073 10.4479 7.44873 9.99994 8.00073 9.99994C8.55273 9.99994 9.00073 10.4479 9.00073 10.9999C9.00073 11.5519 8.55273 11.9999 8.00073 11.9999ZM15.0415 10.8686L9.92685 2.38925C9.52752 1.72792 8.80752 1.33325 8.00085 1.33325C7.19418 1.33325 6.47418 1.72792 6.07485 2.38925L0.960186 10.8686C0.581519 11.4973 0.570186 12.2533 0.930186 12.8906C1.31619 13.5753 2.06619 13.9999 2.88619 13.9999H13.1155C13.9355 13.9999 14.6855 13.5753 15.0715 12.8906C15.4315 12.2533 15.4202 11.4973 15.0415 10.8686Z" fill="#E24930"/>
+                                                                        </svg>
+                                                                        <span>1 просрочен</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>42</td>
+                                                                <td>6</td>
+                                                                <td>
+                                                                    <span class="grey-text">п. Обухово, 1-й Стрелковый переулок вл.6 стр.1м</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="grey-text lh18">
+                                                                        <span class="d-block">Ермолаев Дмитрий Николаевич </span> +7 977 109-44-53 <a href="mailto:sakichev@altali.ru" class="blue-text">sakichev@altali.ru</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="table__delete">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g opacity="0.5">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15C10.5 15.4125 10.1625 15.75 9.75 15.75C9.3375 15.75 9 15.4125 9 15V12C9 11.5875 9.3375 11.25 9.75 11.25C10.1625 11.25 10.5 11.5875 10.5 12V15ZM15 15C15 15.4125 14.6625 15.75 14.25 15.75C13.8375 15.75 13.5 15.4125 13.5 15V12C13.5 11.5875 13.8375 11.25 14.25 11.25C14.6625 11.25 15 11.5875 15 12V15ZM16.5 17.25C16.5 17.6632 16.164 18 15.75 18H8.25C7.836 18 7.5 17.6632 7.5 17.25V9H16.5V17.25ZM10.5 6.246C10.5 6.12975 10.6605 6 10.875 6H13.125C13.3395 6 13.5 6.12975 13.5 6.246V7.5H10.5V6.246ZM18.75 7.5H18H15V6.246C15 5.283 14.1593 4.5 13.125 4.5H10.875C9.84075 4.5 9 5.283 9 6.246V7.5H6H5.25C4.8375 7.5 4.5 7.8375 4.5 8.25C4.5 8.6625 4.8375 9 5.25 9H6V17.25C6 18.4905 7.0095 19.5 8.25 19.5H15.75C16.9905 19.5 18 18.4905 18 17.25V9H18.75C19.1625 9 19.5 8.6625 19.5 8.25C19.5 7.8375 19.1625 7.5 18.75 7.5Z" fill="#85949E"></path>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="" class="blue-text semi-bold">Askona обухово</a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table__status">2 в работе</div>
+                                                                </td>
+                                                                <td>42</td>
+                                                                <td>6</td>
+                                                                <td>
+                                                                    <span class="grey-text">п. Обухово, 1-й Стрелковый переулок вл.6 стр.1м</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="grey-text lh18">
+                                                                        <span class="d-block">Ермолаев Дмитрий Николаевич </span> +7 977 109-44-53 <a href="mailto:sakichev@altali.ru" class="blue-text">sakichev@altali.ru</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="table__delete">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g opacity="0.5">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15C10.5 15.4125 10.1625 15.75 9.75 15.75C9.3375 15.75 9 15.4125 9 15V12C9 11.5875 9.3375 11.25 9.75 11.25C10.1625 11.25 10.5 11.5875 10.5 12V15ZM15 15C15 15.4125 14.6625 15.75 14.25 15.75C13.8375 15.75 13.5 15.4125 13.5 15V12C13.5 11.5875 13.8375 11.25 14.25 11.25C14.6625 11.25 15 11.5875 15 12V15ZM16.5 17.25C16.5 17.6632 16.164 18 15.75 18H8.25C7.836 18 7.5 17.6632 7.5 17.25V9H16.5V17.25ZM10.5 6.246C10.5 6.12975 10.6605 6 10.875 6H13.125C13.3395 6 13.5 6.12975 13.5 6.246V7.5H10.5V6.246ZM18.75 7.5H18H15V6.246C15 5.283 14.1593 4.5 13.125 4.5H10.875C9.84075 4.5 9 5.283 9 6.246V7.5H6H5.25C4.8375 7.5 4.5 7.8375 4.5 8.25C4.5 8.6625 4.8375 9 5.25 9H6V17.25C6 18.4905 7.0095 19.5 8.25 19.5H15.75C16.9905 19.5 18 18.4905 18 17.25V9H18.75C19.1625 9 19.5 8.6625 19.5 8.25C19.5 7.8375 19.1625 7.5 18.75 7.5Z" fill="#85949E"></path>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="" class="blue-text semi-bold">Askona обухово</a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table__status">Все заполнены</div>
+                                                                </td>
+                                                                <td>42</td>
+                                                                <td>6</td>
+                                                                <td>
+                                                                    <span class="grey-text">п. Обухово, 1-й Стрелковый переулок вл.6 стр.1м</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="grey-text lh18">
+                                                                        <span class="d-block">Ермолаев Дмитрий Николаевич </span> +7 977 109-44-53 <a href="mailto:sakichev@altali.ru" class="blue-text">sakichev@altali.ru</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="table__delete">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g opacity="0.5">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15C10.5 15.4125 10.1625 15.75 9.75 15.75C9.3375 15.75 9 15.4125 9 15V12C9 11.5875 9.3375 11.25 9.75 11.25C10.1625 11.25 10.5 11.5875 10.5 12V15ZM15 15C15 15.4125 14.6625 15.75 14.25 15.75C13.8375 15.75 13.5 15.4125 13.5 15V12C13.5 11.5875 13.8375 11.25 14.25 11.25C14.6625 11.25 15 11.5875 15 12V15ZM16.5 17.25C16.5 17.6632 16.164 18 15.75 18H8.25C7.836 18 7.5 17.6632 7.5 17.25V9H16.5V17.25ZM10.5 6.246C10.5 6.12975 10.6605 6 10.875 6H13.125C13.3395 6 13.5 6.12975 13.5 6.246V7.5H10.5V6.246ZM18.75 7.5H18H15V6.246C15 5.283 14.1593 4.5 13.125 4.5H10.875C9.84075 4.5 9 5.283 9 6.246V7.5H6H5.25C4.8375 7.5 4.5 7.8375 4.5 8.25C4.5 8.6625 4.8375 9 5.25 9H6V17.25C6 18.4905 7.0095 19.5 8.25 19.5H15.75C16.9905 19.5 18 18.4905 18 17.25V9H18.75C19.1625 9 19.5 8.6625 19.5 8.25C19.5 7.8375 19.1625 7.5 18.75 7.5Z" fill="#85949E"></path>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab__content" data-tab-path="4">
+                                    <div class="manager-detail__content">
+                                        <div class="manager-settings">
+                                            <div class="migrant-doc">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">Уведомления</div>
+                                                    </div>
+                                                </div>
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif1' />
+                                                            <label for='notif1'>Новые заявки</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif2' />
+                                                            <label for='notif2'>Не заполненные табели</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif3' />
+                                                            <label for='notif3'>Дата собеседовния прошла, уведомлять через </label>
+                                                        </div>
+                                                        <div class="manager-settings__select">
+                                                            <div class="custom-select">
+                                                                <div class="custom-select__target">
+                                                                    <input type="text" value="1 день">
+                                                                </div>
+                                                                <div class="custom-select__dropdown">
+                                                                    <div class="custom-select__dropdown-inner">
+                                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                                                            <span>1 день</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>2 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>3 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>5 дней</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>10 дней</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif4' />
+                                                            <label for='notif4'>Чеки НДФЛ истекают, уведомлять за </label>
+                                                        </div>
+                                                        <div class="manager-settings__select">
+                                                            <div class="custom-select">
+                                                                <div class="custom-select__target">
+                                                                    <input type="text" value="1 день">
+                                                                </div>
+                                                                <div class="custom-select__dropdown">
+                                                                    <div class="custom-select__dropdown-inner">
+                                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                                                            <span>1 день</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>2 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>3 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>5 дней</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>10 дней</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif5' />
+                                                            <label for='notif5'>Патент истекает, уведомлять за </label>
+                                                        </div>
+                                                        <div class="manager-settings__select">
+                                                            <div class="custom-select">
+                                                                <div class="custom-select__target">
+                                                                    <input type="text" value="1 день">
+                                                                </div>
+                                                                <div class="custom-select__dropdown">
+                                                                    <div class="custom-select__dropdown-inner">
+                                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                                                            <span>1 день</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>2 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>3 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>5 дней</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>10 дней</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif6' />
+                                                            <label for='notif6'>Регистрация истекает, уведомлять за </label>
+                                                        </div>
+                                                        <div class="manager-settings__select">
+                                                            <div class="custom-select">
+                                                                <div class="custom-select__target">
+                                                                    <input type="text" value="1 день">
+                                                                </div>
+                                                                <div class="custom-select__dropdown">
+                                                                    <div class="custom-select__dropdown-inner">
+                                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                                                            <span>1 день</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>2 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>3 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>5 дней</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>10 дней</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-settings__item">
+                                                        <div class="manager-settings__check check">
+                                                            <input type='checkbox' id='notif7' />
+                                                            <label for='notif7'>Расторжение договора, через</label>
+                                                        </div>
+                                                        <div class="manager-settings__select">
+                                                            <div class="custom-select">
+                                                                <div class="custom-select__target">
+                                                                    <input type="text" value="1 день">
+                                                                </div>
+                                                                <div class="custom-select__dropdown">
+                                                                    <div class="custom-select__dropdown-inner">
+                                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                                                            <span>1 день</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>2 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>3 дня</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>5 дней</span>
+                                                                        </div>
+                                                                        <div class="custom-select__dropdown-item">
+                                                                            <span>10 дней</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="manager-settings__item-text">после увольнения</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="migrant-doc">
+                                                <div class="migrant-doc__top">
+                                                    <div class="migrant-doc__top-left">
+                                                        <div class="migrant-doc__title">Настройки доступа</div>
+                                                    </div>
+                                                    <div class="migrant-doc__buttons">
+                                                        <button class="migrant-doc__btn">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g opacity="0.75">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0173 15.102L17.5469 12.6316L19.3326 10.845L21.8021 13.3145L20.0173 15.102ZM13.6566 21.4691L10.9277 21.7176L11.1697 19.0079L16.3186 13.859L18.7899 16.3303L13.6566 21.4691ZM23.1202 12.0394L23.1193 12.0385L20.6095 9.52864C19.9302 8.85123 18.7633 8.81914 18.1198 9.46539L9.87349 17.7117C9.57465 18.0096 9.38949 18.4056 9.35099 18.8246L9.00357 22.6471C8.97974 22.9175 9.07599 23.1851 9.26849 23.3776C9.44174 23.5509 9.67549 23.6462 9.91657 23.6462C9.94499 23.6462 9.97249 23.6453 9.99999 23.6426L13.8225 23.2951C14.2423 23.2566 14.6374 23.0724 14.9353 22.7745L23.1826 14.5272C23.8499 13.8581 23.8215 12.7416 23.1202 12.0394Z" fill="#85949E"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="migrant-doc__bottom">
+                                                    <div class="migrant-doc__grid migrant-doc__grid--fourth">
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Логин/e-mail</span>
+                                                                <span class="migrant-doc__item-desc">ermakov@mail.ru</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="migrant-doc__items">
+                                                            <div class="migrant-doc__item">
+                                                                <span class="migrant-doc__item-title">Пароль</span>
+                                                                <span class="migrant-doc__item-desc">5QNkERu6s</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

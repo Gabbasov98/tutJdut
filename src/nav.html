@@ -1,0 +1,163 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Главная", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Второй этап</strong>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="recover.html" style="display: block; margin-bottom: 20px;">
+            Восстановление
+        </a>
+        <a href="message-sent.html" style="display: block; margin-bottom: 20px;">
+            Письмо отправлено
+        </a>
+        <a href="new-password.html" style="display: block; margin-bottom: 20px;">
+            Новый пароль
+        </a>
+        <a href="index-manager.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="staff-manager.html" style="display: block; margin-bottom: 20px;">
+            Сотрудники
+        </a>
+        <a href="add-personal.html" style="display: block; margin-bottom: 20px;">
+            Добавление сотрудника
+        </a>
+        <a href="add-personal2.html" style="display: block; margin-bottom: 20px;">
+            Добавление сотрудника 2
+        </a>
+        <a href="request-manager.html" style="display: block; margin-bottom: 20px;">
+            Заявки
+        </a>
+        <a href="request-reg-manager.html" style="display: block; margin-bottom: 20px;">
+            Заявка для сотрудников с полным оформлением
+        </a>
+        <a href="request-reg-manager2.html" style="display: block; margin-bottom: 20px;">
+            Заявка для сотрудников с полным оформлением 2
+        </a>
+        <a href="objects-manager.html" style="display: block; margin-bottom: 20px;">
+            Объекты
+        </a>
+        <a href="add-object.html" style="display: block; margin-bottom: 20px;">
+            Добавить объект
+        </a>
+        <a href="yur-manager.html" style="display: block; margin-bottom: 20px;">
+            Юр.лица клиентов
+        </a>
+        <a href="yur-card.html" style="display: block; margin-bottom: 20px;">
+            Карточка юрлица клиента
+        </a>
+        <a href="managers.html" style="display: block; margin-bottom: 20px;">
+            Менеджеры
+        </a>
+        <a href="manager-card.html" style="display: block; margin-bottom: 20px;">
+            Карточка менеджера
+        </a>
+        <a href="add-manager.html" style="display: block; margin-bottom: 20px;">
+            Добавить менеджера
+        </a>
+        <a href="yur-our.html" style="display: block; margin-bottom: 20px;">
+            Юрлица НАШИ 
+        </a>
+        <a href="yur-card-our.html" style="display: block; margin-bottom: 20px;">
+            Карточка нашего юрлица
+        </a>
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#selectObject">
+            Выбрать объект
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addPeople">
+            Добавить соискателей
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#selectYur">
+            Выбрать юрлицо
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addYur">
+            Добавить юр. лицо клиента
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#changeManager">
+            Изменить данные менеджера
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#accessModal">
+            Настройки доступа
+        </button>
+
+
+        <strong>Первый этап</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="staff.html" style="display: block; margin-bottom: 20px;">
+            Сотрудники
+        </a>
+        <a href="docs.html" style="display: block; margin-bottom: 20px;">
+            Документы
+        </a>
+        <a href="migrant.html" style="display: block; margin-bottom: 20px;">
+            Карточка мигранта
+        </a>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addPatent">
+            Добавить патент
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#passportChange">
+            Изменить данные паспорта
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addNdfl">
+            Добавить чек НДФЛ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#changeBankCard">
+            Изменить банковскую карту
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#changeReg">
+            Изменить данные о регистрации
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#docModal">
+            Новый договор
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#docModal2">
+            Просмотр документа
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#docModal3">
+            Просмотр документов
+        </button>
+
+
+
+
+
+
+
+    </div>
+
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
