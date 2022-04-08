@@ -154,6 +154,7 @@
         overflow-y: auto;
         height: 420px;
         @include scroll;
+        padding-right: 16px;
         thead {
             position: sticky;
             top: 0;
@@ -165,7 +166,11 @@
         th,
         td {
             &:first-child {
+                width: 50px;
                 padding-left: 30px !important;
+            }
+            &:last-child {
+                padding-right: 0 !important;
             }
         }
         &-bottom {
@@ -447,7 +452,7 @@
         &--disabled {
             .migrant-equip__btn {
                 pointer-events: none;
-                opacity: 0.5;
+                opacity: 0.25;
             }
         }
     }

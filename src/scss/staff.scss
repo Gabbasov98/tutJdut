@@ -1,6 +1,6 @@
 @import 'vars';
 .staff-status {
-    padding: 20px 0;
+    padding: 40px 0;
     background-color: #fff;
     &__inner {
         display: flex;
@@ -432,17 +432,6 @@
             background: rgba(133, 148, 158, 0.25);
             color: $black;
             pointer-events: none;
-        }
-    }
-}
-
-.staff-table {
-    td,
-    th {
-        &:nth-child(4),
-        &:nth-child(9) {
-            border-left: 1px solid #EEF1F1;
-            padding-left: 30px;
         }
     }
 }

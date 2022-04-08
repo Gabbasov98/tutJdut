@@ -417,6 +417,7 @@ input {
             font-size: 13px;
             line-height: 13px;
             white-space: nowrap;
+            display: flex;
             &:not(:last-child) {
                 margin-bottom: 12px;
             }

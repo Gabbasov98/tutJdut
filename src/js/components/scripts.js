@@ -113,6 +113,22 @@ $(document).ready(function() {
         $(this).parents(".migrant-equip__item").addClass("migrant-equip__item--active")
     })
 
+    $(".migrant-equip__btn").hover(onIn);
+
+
+    function onIn() {
+        if (window.innerWidth > 992) {
+            let el = $(this)
+            setTimeout(function() {
+                if (el.is(':hover')) {
+                    $(".migrant-equip__item").removeClass("migrant-equip__item--active")
+                    $(el).parents(".migrant-equip__item").addClass("migrant-equip__item--active")
+
+                }
+            }, 300);
+        }
+    }
+
     $(document).mouseup(function(e) {
         var div = $('.migrant-equip__dropdown');
         if (!div.is(e.target) && div.has(e.target).length === 0) {
@@ -279,9 +295,10 @@ function customSelect() {
     }
 
     $(".custom-select__dropdown-item").click(function() {
+        let text = $(this).text().replace(/\s+/g, ' ').trim()
         unselectOption($(this))
         $(this).addClass("custom-select__dropdown-item--selected")
-        $(this).parents(".custom-select").find("input").attr("value", $(this).text())
+        $(this).parents(".custom-select").find("input").attr("value", text)
     })
 }
 

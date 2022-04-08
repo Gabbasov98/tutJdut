@@ -179,13 +179,12 @@
         margin-top: 40px;
     }
     &__btn {
-        flex-grow: 1;
         height: 32px;
         border-radius: 4px;
         font-weight: 600;
         font-size: 13px;
         white-space: nowrap;
-        padding: 0 5px;
+        padding: 0 9px;
         &:not(:last-child) {
             margin-right: 10px;
         }
@@ -199,6 +198,7 @@
                 margin-left: 0;
                 height: 100%;
                 width: 100%;
+                border: 1px solid #E2E9EF;
             }
         }
         span {

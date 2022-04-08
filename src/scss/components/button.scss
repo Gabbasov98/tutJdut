@@ -71,4 +71,11 @@
         background: #EFF3F7;
         border-color: transparent;
     }
+    &--delete {
+        &:hover {
+            path {
+                fill: $red;
+            }
+        }
+    }
 }

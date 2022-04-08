@@ -104,5 +104,18 @@
                 fill: $blue2;
             }
         }
+        &-hidden {
+            display: none;
+        }
+        &--active {
+            .pass-field__btn {
+                &-show {
+                    display: none;
+                }
+                &-hidden {
+                    display: unset;
+                }
+            }
+        }
     }
 }

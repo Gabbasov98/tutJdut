@@ -31,8 +31,14 @@ $(document).ready(function() {
     })
 
     $(".table__sort").click(function() {
-        $(this).toggleClass("table__sort--active")
+        if (!$(this).hasClass("table__sort--sorted")) {
+            $(".table__sort").removeClass("table__sort--sorted")
+            $(this).addClass("table__sort--sorted")
+        } else {
+            $(this).toggleClass("table__sort--active")
+        }
     })
+
 })
 
 
