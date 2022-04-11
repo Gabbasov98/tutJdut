@@ -457,6 +457,15 @@ input {
         &--p0 {
             padding: 0;
         }
+        a {
+            color: #1C7BBB;
+            &:hover {
+                color: #469EDA;
+            }
+            &:active {
+                color: #1C7BBB;
+            }
+        }
     }
     &--active {
         .more {
