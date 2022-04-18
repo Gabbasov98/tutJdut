@@ -241,7 +241,8 @@
             max-width: 190px;
         }
         &:nth-child(6) {
-            max-width: 240px;
+            max-width: 250px;
+            padding-right: 10px;
         }
     }
     td {
@@ -271,6 +272,13 @@
         &:nth-child(4) {
             border-left: 1px solid #EEF1F1;
             padding-left: 30px;
+        }
+        &:last-child {
+            .lh18 {
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
         }
     }
     td {
@@ -405,6 +413,9 @@
         &:nth-child(3) {
             border-left: 1px solid #EEF1F1 !important;
             padding-left: 30px;
+        }
+        &:last-child {
+            text-align: left !important;
         }
     }
 }

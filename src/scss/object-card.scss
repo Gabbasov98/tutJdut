@@ -86,9 +86,14 @@
     }
     .migrant-doc {
         background: #fff;
-        -webkit-box-shadow: 0 2px 6px rgba(133, 153, 166, .14);
         box-shadow: 0 2px 6px rgba(133, 153, 166, .14);
         border-radius: 0 0 7px 7px;
+        &--noshadow {
+            box-shadow: none;
+            border-radius: 0;
+            background-color: transparent;
+            border: none;
+        }
         &__grid {
             padding-bottom: 30px;
             margin-bottom: 30px;
@@ -101,10 +106,9 @@
     }
     &__gallery {
         display: grid;
-        margin-top: 26px;
         grid-template-columns: repeat(6, 1fr);
         gap: 30px;
-        padding: 26px 30px 50px;
+        padding: 0 30px 50px;
         &-img {
             img {
                 width: 100%;

@@ -168,6 +168,10 @@ $(document).ready(function() {
     $(".additional-info__upload-delete").click(function() {
         $(".additional-info__upload").find(".file-input").removeClass("file-input--disabled")
     })
+
+    $(".add-worker__object-btn1").click(function() {
+        $(this).parents(".add-worker__object-btn").addClass("add-worker__object-btn--active")
+    })
 })
 
 function disableInterviewBtn(parent) {

@@ -23,10 +23,10 @@ $(document).ready(function() {
         }
     });
 
-    $(".work-time__next button").click(function() {
+    $(".work-time__next").click(function() {
         $(".work-time").addClass("work-time--last15")
     })
-    $(".work-time__prev button").click(function() {
+    $(".work-time__prev").click(function() {
         $(".work-time").removeClass("work-time--last15")
     })
 
@@ -36,7 +36,16 @@ $(document).ready(function() {
 
     $(".finance__comment-btn").click(function() {
         $(this).parents(".finance__comment").addClass("finance__comment--active")
+
+
+
     })
+
+    $(document).keyup(function(e) {
+        if (e.keyCode === 13 && !$(".finance__comment--active").hasClass("finance__comment--filled")) {
+            $(".finance__comment").removeClass("finance__comment--active")
+        }
+    });
 
     $(document).mouseup(function(e) {
         var div = $('.finance__comment-dropdown');
@@ -105,6 +114,7 @@ function nextYear() {
 $(".month-picker__month").click(function() {
     let month = +$(this).attr("data-month")
     setMonth(month, currentYear)
+    $(".month-picker").removeClass("month-picker--active")
 })
 
 

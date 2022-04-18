@@ -11,6 +11,8 @@
         justify-content: space-between;
     }
     &__title {
+        font-size: 36px;
+        line-height: 24px;
         span {
             display: flex;
             &::after {
@@ -95,6 +97,24 @@
         margin-left: 20px;
         svg {
             margin-right: 8px;
+        }
+    }
+    &__mo {
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-left: 55px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: $grey;
+            svg {
+                margin-right: 10px;
+            }
         }
     }
 }

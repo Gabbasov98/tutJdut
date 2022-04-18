@@ -59,8 +59,14 @@
         <a href="time-table.html" style="display: block; margin-bottom: 20px;">
             Учет времени
         </a>
-        <a href="add-personal2.html" style="display: block; margin-bottom: 20px;">
+        <a href="add-personal3.html" style="display: block; margin-bottom: 20px;">
             Добавление сотрудника (MO)
+        </a>
+        <a href="staff-mo.html" style="display: block; margin-bottom: 20px;">
+            Сотрудники
+        </a>
+        <a href="worker-card.html" style="display: block; margin-bottom: 20px;">
+            карточка сотрудника
         </a>
         <a href="objects-mo.html" style="display: block; margin-bottom: 20px;">
             Объекты
@@ -1424,7 +1430,7 @@
         <div class="modal__content">
             <div class="change-object__form">
 
-                <fieldset class='form-group change-object__fg--14'>
+                <fieldset class='form-group change-object__fg--14 change-object__fg--bold'>
                     <label>Краткое название объекта</label>
                     <input type='text' />
                 </fieldset>
@@ -1598,7 +1604,21 @@
 
                 <fieldset class='form-group'>
                     <label>Формат оплаты</label>
-                    <input type='text' />
+                    <div class="custom-select">
+                        <div class="custom-select__target">
+                            <input type="text" value="Оплата по ставкам">
+                        </div>
+                        <div class="custom-select__dropdown">
+                            <div class="custom-select__dropdown-inner">
+                                <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">
+                                    Оплата по ставкам
+                                </div>
+                                <div class="custom-select__dropdown-item">
+                                    Оплата по ставкам 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset class='form-group'>
                     <label>Ставка дневная</label>

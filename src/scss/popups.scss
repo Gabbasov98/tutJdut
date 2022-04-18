@@ -729,8 +729,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
-    &__fg--14 {
-        grid-column: 1/4;
+    &__fg {
+        &--14 {
+            grid-column: 1/4;
+        }
+        &--bold {
+            input {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 14px;
+            }
+        }
     }
 }
 
@@ -801,6 +810,9 @@
             &:last-child {
                 padding-right: 30px !important;
             }
+        }
+        td {
+            height: 80px !important;
         }
         &-btn {
             margin-left: auto;

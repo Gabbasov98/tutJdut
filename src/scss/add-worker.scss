@@ -277,6 +277,41 @@
         svg {
             margin-right: 7px;
         }
+        &--active {
+            .add-worker__object-btn1 {
+                display: none;
+            }
+            .add-worker__object-btn2 {
+                display: flex;
+            }
+            &:hover {
+                path {
+                    fill: #85949E;
+                }
+            }
+        }
+    }
+    &__object-btn1 {
+        height: 100%;
+        width: 100%;
+        &:hover {
+            color: $blue2;
+        }
+    }
+    &__object-btn2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 14px;
+        height: 100%;
+        display: none;
+        svg {
+            margin: 0;
+        }
+        .icon-btn {
+            width: 24px;
+            height: 24px;
+        }
     }
     &__groups {
         display: grid;
@@ -368,7 +403,7 @@
             max-width: 150px;
             margin-left: 15px;
             &:not(:last-child) {
-                margin-right: 10px;
+                // margin-right: 10px;
             }
             span {
                 overflow: hidden;

@@ -77,7 +77,7 @@
     &--delete {
         &:hover {
             path {
-                fill: $red;
+                fill: $red !important;
             }
         }
     }
