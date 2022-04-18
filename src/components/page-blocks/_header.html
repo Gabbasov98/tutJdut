@@ -21,13 +21,35 @@
                     <a href="staff.html" class="nav__item @@if (active === 'staff'){nav__item--active}">Сотрудники</a>
                     <a href="docs.html" class="nav__item @@if (active === 'docs'){nav__item--active}">Документы</a>
                 </div>
+                } @@if (status === "mo"){
+                <div class="nav">
+                    <a href="index-mo.html" class="nav__item  @@if (active === 'index'){nav__item--active}">Главная</a>
+                    <a href="" class="nav__item @@if (active === 'req'){nav__item--active}">Заявки</a>
+                    <a href="" class="nav__item @@if (active === 'tabel'){nav__item--active}">Табели</a>
+                    <a href="" class="nav__item  @@if (active === 'staff'){nav__item--active}">Сотрудники</a>
+                    <a href="" class="nav__item @@if (active === 'objects'){nav__item--active}">Объекты</a>
+                    <a href="" class="nav__item">Клиенты</a>
+                </div>
                 }
             </div>
             <div class="header__right">
+                @@if (status === "user"){
+                <a href="" class="header__user">
+                    <img src="img/avatar.jpg" alt="">
+                    <span>Менеджер документов</span>
+                </a>
+                } @@if (status === "manager"){
                 <a href="" class="header__user">
                     <img src="img/avatar.jpg" alt="">
                     <span>Руководитель</span>
                 </a>
+                } @@if (status === "mo"){
+                <a href="" class="header__user">
+                    <img src="img/avatar2.jpg" alt="">
+                    <span>Менеджер объектов</span>
+                </a>
+                }
+
                 <a href="" class="header__btn header__btn--settings btn">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.15 6.00006C8.52699 6.00006 7.91797 6.18481 7.39996 6.53093C6.88194 6.87706 6.4782 7.36902 6.23978 7.94461C6.00136 8.5202 5.93898 9.15356 6.06053 9.7646C6.18207 10.3756 6.48208 10.9369 6.92261 11.3774C7.36315 11.818 7.92443 12.118 8.53547 12.2395C9.14651 12.3611 9.77987 12.2987 10.3555 12.0603C10.931 11.8219 11.423 11.4181 11.7691 10.9001C12.1153 10.3821 12.3 9.77307 12.3 9.15006C12.3026 8.73566 12.223 8.32487 12.0656 7.94151C11.9082 7.55814 11.6763 7.20984 11.3833 6.91681C11.0902 6.62378 10.7419 6.39186 10.3586 6.23449C9.9752 6.07711 9.5644 5.99743 9.15 6.00006ZM9.15 10.5001C8.883 10.5001 8.62199 10.4209 8.39998 10.2725C8.17798 10.1242 8.00494 9.91336 7.90276 9.66668C7.80059 9.42 7.77385 9.14856 7.82594 8.88669C7.87803 8.62482 8.00661 8.38427 8.19541 8.19547C8.38421 8.00667 8.62476 7.87809 8.88663 7.826C9.14851 7.77391 9.41994 7.80065 9.66663 7.90282C9.91331 8.005 10.1241 8.17804 10.2725 8.40004C10.4208 8.62205 10.5 8.88306 10.5 9.15006C10.5033 9.32825 10.4706 9.50528 10.404 9.67056C10.3373 9.83584 10.238 9.98598 10.1119 10.112C9.98592 10.238 9.83578 10.3373 9.6705 10.404C9.50522 10.4707 9.32819 10.5034 9.15 10.5001Z" fill="#85949E"/>

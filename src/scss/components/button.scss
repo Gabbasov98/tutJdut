@@ -52,9 +52,12 @@
 }
 
 .icon-btn {
-    margin-left: 8px;
     border: 1px solid transparent;
     border-radius: 4px;
+    padding: 0;
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
     &:hover {
         background: #FFFFFF;
         border-color: #E2E9EF;

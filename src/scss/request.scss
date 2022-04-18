@@ -168,6 +168,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            &-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
         }
         &-item {
             margin-top: 25px;

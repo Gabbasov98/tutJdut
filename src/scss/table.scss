@@ -384,3 +384,62 @@
         }
     }
 }
+
+.index-mo-staff-table {
+    td,
+    th {
+        &:nth-child(3),
+        &:nth-child(7) {
+            border-left: 1px solid #EEF1F1 !important;
+            padding-left: 30px;
+        }
+    }
+}
+
+.tabel-table {
+    td,
+    th {
+        &:first-child {
+            min-width: 130px;
+        }
+        &:nth-child(3) {
+            border-left: 1px solid #EEF1F1 !important;
+            padding-left: 30px;
+        }
+    }
+}
+
+.worker-tabel-table {
+    td,
+    th {
+        &:first-child {
+            min-width: 210px !important;
+        }
+        &:nth-child(3) {
+            border-left: 1px solid #EEF1F1 !important;
+            padding-left: 30px;
+        }
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+            text-align: center !important;
+            .table__sort {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.object-tabel {
+    td,
+    th {
+        &:first-child {
+            min-width: 230px !important;
+        }
+        &:nth-child(3) {
+            border-left: 1px solid #EEF1F1 !important;
+            padding-left: 30px;
+        }
+    }
+}

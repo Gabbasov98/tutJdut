@@ -591,3 +591,232 @@
         }
     }
 }
+
+.change-migrant {
+    .modal {
+        &-dialog {
+            max-width: 970px;
+        }
+        &__content {
+            padding: 0;
+        }
+    }
+    &__groups {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        padding: 20px 30px 30px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #F3F6F9;
+        }
+    }
+    &__fg {
+        &--14 {
+            grid-column: 1/4;
+        }
+        &--37 {
+            grid-column: 4/7;
+        }
+        &--13 {
+            grid-column: 1/3;
+        }
+        &--35 {
+            grid-column: 3/5;
+        }
+        &--57 {
+            grid-column: 5/7;
+        }
+        &--47 {
+            grid-column: 4/7;
+        }
+    }
+    &__check {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        label {
+            padding-left: 29px;
+        }
+    }
+}
+
+.change-work-place {
+    .modal {
+        &-dialog {
+            max-width: 970px;
+        }
+    }
+    &__add {
+        width: 290px;
+        height: 44px;
+        font-weight: 600;
+        font-size: 13px;
+        svg {
+            margin-right: 7px;
+        }
+    }
+    &__table {
+        th {
+            background: #F3F6F9;
+        }
+        th,
+        td {
+            &:nth-child(1) {
+                min-width: 200px;
+            }
+            &:nth-child(2) {
+                max-width: 310px;
+            }
+        }
+    }
+    &__groups {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.additional-info {
+    .modal {
+        &-dialog {
+            max-width: 500px;
+        }
+        &__content {
+            padding: 0;
+        }
+    }
+    &__groups {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 30px 30px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #F3F6F9;
+        }
+    }
+    .add-worker__uploaded-item {
+        margin-left: 0;
+    }
+    .file-input--disabled {
+        display: none;
+    }
+    &__docs {
+        padding: 20px 30px 30px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #F3F6F9;
+        }
+        &-title {
+            color: rgba($grey, 0.75);
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+}
+
+.change-object {
+    .modal {
+        &-dialog {
+            max-width: 970px;
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &__fg--14 {
+        grid-column: 1/4;
+    }
+}
+
+.change-img {
+    .modal {
+        &-dialog {
+            max-width: 970px;
+        }
+    }
+}
+
+.change-condition {
+    .modal {
+        &-dialog {
+            max-width: 970px;
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &__fg {
+        &--14 {
+            grid-column: 1/4;
+        }
+        &--13 {
+            grid-column: 1/3;
+        }
+        &--24 {
+            grid-column: 2/4;
+        }
+    }
+    &__check {
+        padding-top: 24px;
+        label {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding-left: 26px;
+        }
+    }
+}
+
+.change-object-responsible {
+    .modal {
+        &-dialog {
+            max-width: 735px;
+            padding-bottom: 20px;
+        }
+        &__content {
+            padding: 0;
+        }
+    }
+    &__table {
+        th {
+            background: #F3F6F9;
+            border-top: 1px solid #E2E9EF;
+            border-bottom: 1px solid #E2E9EF;
+        }
+        th,
+        td {
+            &:nth-child(1) {
+                padding-left: 30px !important;
+                max-width: 200px;
+                width: 200px;
+            }
+            &:last-child {
+                padding-right: 30px !important;
+            }
+        }
+        &-btn {
+            margin-left: auto;
+            font-weight: 700;
+            font-size: 13px;
+            width: 80px;
+            height: 32px;
+        }
+        .more {
+            &__btn {
+                margin-left: 0;
+            }
+            &__dropdown {
+                right: unset;
+                left: 0;
+            }
+        }
+    }
+}

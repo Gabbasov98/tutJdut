@@ -1,20 +1,24 @@
 @import 'vars';
 html {
     width: 100%;
+    background: #F3F6F9;
 }
 
 .page {
     min-height: 100vh;
-    background: #F3F6F9;
     padding-bottom: 80px;
-    min-width: 1200px;
-}
-
-.wrapper {
     min-width: 1200px;
     display: flex;
     flex-direction: column;
+    background: #F3F6F9;
+}
+
+.wrapper {
+    min-width: 1440px;
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
+    flex-grow: 1;
     // height: calc(100vh - 80px);
     // overflow-y: auto;
     // overflow-x: hidden;

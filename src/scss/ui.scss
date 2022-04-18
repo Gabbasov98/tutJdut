@@ -332,8 +332,10 @@ input {
         font-weight: 400;
         font-size: 13px;
         line-height: 14px;
+        display: block;
     }
-    input {
+    input,
+    textarea {
         margin-top: 10px;
         background-color: #F3F6F9;
         border-radius: 4px;
@@ -349,6 +351,12 @@ input {
             border-color: #25A1F4;
             background-color: #fff;
         }
+    }
+    textarea {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        min-height: 65px;
+        max-height: 100px;
     }
     &--error {
         input {

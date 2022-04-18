@@ -1,10 +1,10 @@
-<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Карточка мигранта", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Сотрудники", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
 
 <body>
     <div class="page">
 
         <div class="wrapper">
-            @@include('components/page-blocks/_header.html',{"status":"user","active":"staff"})
+            @@include('components/page-blocks/_header.html',{"status":"user","active":"docs"})
             <main class="content">
                 <div class="migrant">
                     <section class='migrant-top'>
@@ -908,9 +908,13 @@
             </main>
         </div>
     </div>
-    @@include('components/page-blocks/_popups.html')
+
+    </div>
+
     <!--  -->
-    @@include('components/page-blocks/_scripts.html')
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

@@ -48,6 +48,11 @@
                 font-size: 24px;
             }
         }
+        &--130 {
+            width: 130px;
+            min-height: 97px;
+            height: unset;
+        }
         &:not(:last-child) {
             margin-right: 20px;
         }

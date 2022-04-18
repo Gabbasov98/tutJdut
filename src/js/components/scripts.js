@@ -13,8 +13,24 @@ function docSlider() {
     })
 }
 
+const monthNamesRussian = [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь"
+]
 
 $(document).ready(function() {
+
+
     docSlider()
     $("[data-bs-target='#docModal3']").click(function() {
         setTimeout(() => {
@@ -149,7 +165,9 @@ $(document).ready(function() {
         disableInterviewBtn($(this))
     })
 
-
+    $(".additional-info__upload-delete").click(function() {
+        $(".additional-info__upload").find(".file-input").removeClass("file-input--disabled")
+    })
 })
 
 function disableInterviewBtn(parent) {
@@ -178,20 +196,7 @@ function moreDropdown() {
 
 
 function dateFilter() {
-    let monthNamesRussian = [
-        "Январь",
-        "Февраль",
-        "Март",
-        "Апрель",
-        "Май",
-        "Июнь",
-        "Июль",
-        "Август",
-        "Сентябрь",
-        "Октябрь",
-        "Ноябрь",
-        "Декабрь"
-    ]
+
     moment.locale('ru');
     moment.updateLocale('ru', {
         months: monthNamesRussian

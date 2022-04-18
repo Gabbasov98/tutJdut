@@ -335,6 +335,12 @@
             }
         }
     }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        transform: translateY(8px);
+        margin-left: auto;
+    }
 }
 
 .staff {

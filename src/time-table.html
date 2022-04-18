@@ -1,0 +1,141 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Учёт времени", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"status":"mo","active":"tabel"})
+            <main class="content">
+
+                <section class='tabel-top'>
+                    <div class='container'>
+                        <div class="tabel-top__inner">
+                            <a href="" class="tabel-top__link btn">
+                                <i>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#85949E"></path>
+                                </svg>
+                            </i>
+                                <div class="tabel-top__link-title">
+                                    <span class="semi-bold">Учет времени</span> на <strong class="bold">Askona Обухово</strong>
+                                </div>
+                            </a>
+                            <div class="tabel-top__right">
+                                <p class="tabel-top__date grey-text">
+                                    1-15 утвержден <strong class="semi-bold">08.12.2021  15:26</strong>
+                                </p>
+                                <p class="tabel-top__date grey-text">
+                                    15-31 утвержден <strong class="semi-bold">13.01.2022  17:10</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class='tabel-nav'>
+                    <div class='container'>
+                        <div class='tabel-nav__inner'>
+                            <div class="tabel__tabs">
+                                <div class="tabel__tabs-wrap">
+                                    <div class="tabel__tab tabel__tab--active" data-tab-path="1">График работ</div>
+                                    <div class="tabel__tab" data-tab-path="2">Финансы</div>
+                                </div>
+                            </div>
+                            <div class="month-picker">
+                                <div class="month-picker__show">
+                                    <button class="month-picker__btn month-picker__btn--prev btn btn-grey-outline" onclick="prevMonth()">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0839 5.70832C15.3193 5.70832 15.5557 5.78748 15.7505 5.94998C16.1922 6.31769 16.2516 6.97498 15.8839 7.41665L11.2214 13.0114L15.7162 18.5969C16.0766 19.0448 16.0057 19.701 15.5578 20.0614C15.1089 20.4219 14.4537 20.351 14.0922 19.9031L9.06303 13.6531C8.75261 13.2667 8.75677 12.7146 9.07448 12.3333L14.2828 6.08332C14.4891 5.83644 14.7849 5.70832 15.0839 5.70832Z" fill="#85949E"/>
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="month-picker__current" value="" readonly>
+                                    <button class="month-picker__btn month-picker__btn--next btn btn-grey-outline" onclick="nextMonth()">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9161 20.2917C10.6807 20.2917 10.4443 20.2125 10.2495 20.05C9.80781 19.6823 9.74843 19.025 10.1161 18.5833L14.7786 12.9886L10.2838 7.40314C9.92343 6.95522 9.99427 6.29897 10.4422 5.93856C10.8911 5.57814 11.5463 5.64897 11.9078 6.09689L16.937 12.3469C17.2474 12.7333 17.2432 13.2854 16.9255 13.6667L11.7172 19.9167C11.5109 20.1636 11.2151 20.2917 10.9161 20.2917Z" fill="#85949E"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="month-picker__hidden">
+                                    <div class="month-picker__top">
+                                        <button class="month-picker__year-btn" onclick="prevYear()">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5428 0.542847L11.957 1.95706L6.16414 7.74995L11.957 13.5428L10.5428 14.9571L3.33571 7.74995L10.5428 0.542847Z" fill="#25A1F4"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="month-picker__year" readonly>
+                                        <button class="month-picker__year-btn month-picker__year-btn--next" onclick="nextYear()">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.45718 14.9572L4.04297 13.5429L9.83586 7.75005L4.04297 1.95715L5.45718 0.54294L12.6643 7.75005L5.45718 14.9572Z" fill="#25A1F4"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="month-picker__months">
+                                        <div class="month-picker__month" data-month="0">Январь</div>
+                                        <div class="month-picker__month" data-month="1">Февраль</div>
+                                        <div class="month-picker__month" data-month="2">Март</div>
+                                        <div class="month-picker__month" data-month="3">Апрель</div>
+                                        <div class="month-picker__month" data-month="4">Май</div>
+                                        <div class="month-picker__month" data-month="5">Июнь</div>
+                                        <div class="month-picker__month" data-month="6">Июль</div>
+                                        <div class="month-picker__month" data-month="7">Август</div>
+                                        <div class="month-picker__month" data-month="8">Сентябрь</div>
+                                        <div class="month-picker__month" data-month="9">Октябрь</div>
+                                        <div class="month-picker__month" data-month="10">Ноябрь</div>
+                                        <div class="month-picker__month" data-month="11">Декабрь</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class='tabel'>
+                    <div class='container'>
+                        <div class='tabel__inner'>
+                            <div class="tabel__content tabel__content--active" data-tab-path="1">
+                                @@include('components/page-blocks/_work-time.html')
+                            </div>
+                            <div class="tabel__content" data-tab-path="2">
+                                @@include('components/page-blocks/_finance.html')
+                            </div>
+                            <div class="work-time__bottom">
+                                <div class="work-time__bottom-left">
+                                    <button class="btn icon-btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="32" height="32" rx="4" fill="white"/>
+                                            <path opacity="0.75" fill-rule="evenodd" clip-rule="evenodd" d="M15.4193 16.3196C15.4175 16.2966 15.4167 16.2734 15.4167 16.25V8.91667C15.4167 8.41067 15.8264 8 16.3333 8C16.8403 8 17.25 8.41067 17.25 8.91667V16.2498L19.45 14.6C19.8552 14.2948 20.4299 14.3782 20.7333 14.7833C21.0377 15.1885 20.9552 15.7632 20.55 16.0667L16.8833 18.8167C16.7211 18.9386 16.5268 19 16.3333 19C16.1491 19 15.9648 18.9441 15.8063 18.8332L12.1396 16.2537C11.7252 15.9622 11.6253 15.3902 11.9168 14.9767C12.2083 14.5624 12.7794 14.4625 13.1937 14.754L15.4193 16.3196ZM10.8333 20.8333V21.75H21.8333V20.8333C21.8333 20.3292 22.2458 19.9167 22.75 19.9167C23.2542 19.9167 23.6667 20.3292 23.6667 20.8333V22.6667C23.6667 23.1708 23.2542 23.5833 22.75 23.5833H9.91667C9.4125 23.5833 9 23.1708 9 22.6667V20.8333C9 20.3292 9.4125 19.9167 9.91667 19.9167C10.4208 19.9167 10.8333 20.3292 10.8333 20.8333Z" fill="#85949E"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn icon-btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="32" height="32" rx="4" fill="white"/>
+                                            <g opacity="0.75">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.333 19.9719C23.333 20.3092 23.0718 20.5833 22.7491 20.5833H21.958V18.75C21.958 17.7389 21.1358 16.9167 20.1247 16.9167H11.8747C10.8636 16.9167 10.0413 17.7389 10.0413 18.75V20.5833H9.25026C8.92759 20.5833 8.66634 20.3092 8.66634 19.9719V13.8614C8.66634 13.5241 8.92759 13.25 9.25026 13.25H10.4997H12.333H19.6663H21.4997H22.7491C23.0718 13.25 23.333 13.5241 23.333 13.8614V19.9719ZM11.8747 22.4167V18.75H20.1247L20.1265 22.4167H11.8747ZM12.3458 9.58333H19.6663V11.4167H12.3394L12.3458 9.58333ZM22.7491 11.4167H21.4997V9.58333C21.4997 8.57225 20.7462 7.75 19.8194 7.75H12.1799C11.2532 7.75 10.4997 8.57225 10.4997 9.58333V11.4167H9.25026C7.91742 11.4167 6.83301 12.513 6.83301 13.8614V19.9719C6.83301 21.3203 7.91742 22.4167 9.25026 22.4167H10.0413C10.0413 23.4278 10.8636 24.25 11.8747 24.25H20.1247C21.1358 24.25 21.958 23.4278 21.958 22.4167H22.7491C24.0819 22.4167 25.1663 21.3203 25.1663 19.9719V13.8614C25.1663 12.513 24.0819 11.4167 22.7491 11.4167Z" fill="#85949E"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="work-time__bottom-right">
+                                    <span class="work-time__bottom-title">E-mail контактного лица</span>
+                                    <fieldset class='form-group work-time__bottom-fg'>
+                                        <input type='text' />
+                                    </fieldset>
+                                    <button disabled class="work-time__bottom-btn btn btn-blue">Отправить на сверку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
