@@ -276,9 +276,6 @@
         justify-content: space-between;
         padding: 20px 0;
         box-shadow: -5px 0px 10px rgba(133, 153, 166, 0.1);
-        &:hover {
-            box-shadow: -5px 0px 10px rgba(133, 153, 166, 0.3);
-        }
     }
     &__prev {
         display: none;
@@ -288,9 +285,15 @@
         box-shadow: 5px 0px 10px rgba(133, 153, 166, 0.1);
         border-left: 1px solid #F0F4F7;
         border-right: 1px solid #f0f4f7;
+        &:hover {
+            box-shadow: 5px 0px 10px rgba(133, 153, 166, 0.3);
+        }
     }
     &__next {
         border-right: 1px solid #f0f4f7;
+        &:hover {
+            box-shadow: -5px 0px 10px rgba(133, 153, 166, 0.3);
+        }
     }
     table {
         background-color: #fff;

@@ -35,3 +35,17 @@ a.blue-text {
 .orange-text {
     color: #E48D00;
 }
+
+.lh18 {
+    line-height: 18px;
+    * {
+        line-height: 18px;
+    }
+}
+
+.lh22 {
+    line-height: 22px;
+    * {
+        line-height: 22px;
+    }
+}

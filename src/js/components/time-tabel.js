@@ -188,13 +188,13 @@ function timeTableEdit() {
                 let parent = $(".work-time__input").parents("td").find(".work-time__edit")
                 $(parent).find("span").html(value)
 
-                if (workShift === 0) {
+                if (workShift === 2) {
                     $(parent).removeClass("work-time__edit--dark")
                     $(parent).addClass("work-time__edit--light")
                 } else if (workShift === 1) {
                     $(parent).addClass("work-time__edit--dark")
                     $(parent).removeClass("work-time__edit--light")
-                } else if (workShift === 2) {
+                } else if (workShift === 0) {
                     $(parent).removeClass("work-time__edit--dark")
                     $(parent).removeClass("work-time__edit--light")
                 }
