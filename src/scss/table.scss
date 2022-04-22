@@ -260,6 +260,27 @@
             margin-bottom: 5px;
         }
     }
+    &--mp {
+        th,
+        td {
+            &:first-child {
+                min-width: 200px;
+            }
+            &:nth-child(2),
+            &:nth-child(7) {
+                border-left: 1px solid #EEF1F1;
+                padding-left: 30px;
+            }
+            &:nth-child(6) {
+                border-left: none;
+                padding-left: 0;
+                max-width: 200px;
+            }
+            &:nth-child(7) {
+                max-width: 200px;
+            }
+        }
+    }
 }
 
 .yur-table-manager {

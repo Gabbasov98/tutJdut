@@ -6,6 +6,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
     }
     &__item {
         padding-right: 30px;
@@ -23,6 +27,11 @@
             font-size: 18px;
             line-height: 111%;
             color: #6F7E88;
+            display: flex;
+            align-items: center;
+            .table__status-badge {
+                margin: 0 0 0 8px;
+            }
         }
         &-info {
             display: flex;

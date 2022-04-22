@@ -1,0 +1,184 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Добавить заявку", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"status":"mp","active":"req"})
+            <main class="content">
+
+                <section class='worker-top'>
+                    <div class='container'>
+                        <div class="worker-top__inner">
+                            <a href="" class="worker-top__link btn">
+                                <i>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6671 4.16673C11.8554 4.16673 12.0446 4.23006 12.2004 4.36006C12.5538 4.65423 12.6013 5.18006 12.3071 5.53339L8.57709 10.0092L12.1729 14.4776C12.4613 14.8359 12.4046 15.3609 12.0463 15.6492C11.6871 15.9376 11.1629 15.8809 10.8738 15.5226L6.85042 10.5226C6.60209 10.2134 6.60542 9.77173 6.85959 9.46673L11.0263 4.46673C11.1913 4.26923 11.4279 4.16673 11.6671 4.16673Z" fill="#85949E"/>
+                                </svg>
+                            </i>
+                                <span>Добавить заявку</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='add-worker'>
+                    <div class='container'>
+                        <div class='add-worker__inner'>
+                            <div class="add-worker__left">
+                                <div class="worker-sidebar">
+                                    <div class="worker-sidebar__top">
+                                        <div class="worker-sidebar__tabs">
+                                            <a href="add-req-mp.html" class="worker-sidebar__tab worker-sidebar__tab--active btn">Рекрутинг</a>
+                                            <a href="add-req-mp2.html" class="worker-sidebar__tab btn">Полная</a>
+                                        </div>
+                                    </div>
+                                    <div class="worker-sidebar__bottom">
+                                        <div class="worker-sidebar__links">
+                                            <a href="#workInfo" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Описание вакансии</span>
+                                            </a>
+                                            <a href="#demand" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Требования к кандидату</span>
+                                            </a>
+                                            <a href="#workPlace" class="worker-sidebar__link">
+                                                <i></i>
+                                                <span>Место работы</span>
+                                            </a>
+
+                                            <a href="#desc" class="worker-sidebar__link worker-sidebar__link--active">
+                                                <i></i>
+                                                <span>Описание вакансии</span>
+                                            </a>
+                                        </div>
+                                        <button class="worker-sidebar__btn btn btn-blue">Добавить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-worker__right">
+                                <div id="desc" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Описание вакансии</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__group-grid--three">
+                                        <fieldset class='form-group'>
+                                            <label>Краткое название объекта</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Количество вакантных мест</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <label>Вакансия актуальна до</label>
+                                            <div class="date-input">
+                                                <input type='text' />
+                                            </div>
+                                        </fieldset>
+
+                                    </div>
+                                </div>
+                                <div id="workPlace" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Место работы</h3>
+                                    </div>
+                                    <div class="add-worker__buttons">
+                                        <button class="add-worker__btn add-worker__btn--p30 btn btn-grey-outline" data-bs-toggle="modal" data-bs-target="#selectYur">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.75">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8252 16.6667H13.3336V10.8333C13.3336 10.3725 12.9602 10 12.5002 10H7.50024C7.03941 10 6.66691 10.3725 6.66691 10.8333V16.6667H4.16691L4.17191 9.6525L9.99858 3.69334L15.8336 9.68667L15.8252 16.6667ZM8.33358 16.6667H11.6669V11.6667H8.33358V16.6667ZM17.0202 8.48751L10.5961 1.9175C10.2819 1.59667 9.71858 1.59667 9.40441 1.9175L2.97941 8.48834C2.67524 8.80084 2.50024 9.2375 2.50024 9.68667V16.6667C2.50024 17.5858 3.20608 18.3333 4.07358 18.3333H7.50024H12.5002H15.9261C16.7936 18.3333 17.5002 17.5858 17.5002 16.6667V9.68667C17.5002 9.2375 17.3252 8.80084 17.0202 8.48751Z" fill="#85949E"/>
+                                                </g>
+                                            </svg>
+                                            <span>Выбрать объект</span>
+                                        </button>
+                                        <span class="add-worker__split grey-text">или</span>
+                                        <button class="add-worker__btn btn btn-grey-outline" data-bs-toggle="modal" data-bs-target="#addYur">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.75">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.917 10.0834L12.417 10.0834V4.58341C12.417 4.0765 12.0063 3.66675 11.5003 3.66675C10.9943 3.66675 10.5837 4.0765 10.5837 4.58341V10.0834H5.08366C4.57766 10.0834 4.16699 10.4932 4.16699 11.0001C4.16699 11.507 4.57766 11.9167 5.08366 11.9167H10.5837L10.5837 17.4167C10.5837 17.9237 10.9943 18.3334 11.5003 18.3334C12.0063 18.3334 12.417 17.9237 12.417 17.4167V11.9167H17.917C18.423 11.9167 18.8337 11.507 18.8337 11.0001C18.8337 10.4932 18.423 10.0834 17.917 10.0834Z" fill="#85949E"/>
+                                                </g>
+                                            </svg>
+                                            <span>Добавить новое</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="demand" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Требования к кандидату</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__group-grid--three">
+                                        <fieldset class='form-group'>
+                                            <label>Специализация</label>
+                                            <div class="custom-select">
+                                                <div class="custom-select__target">
+                                                    <input type="text" value="Оплата по ставкам">
+                                                </div>
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">Специализация</div>
+                                                        <div class="custom-select__dropdown-item">Специализация 2</div>
+                                                        <div class="custom-select__dropdown-item">Специализация 3</div>
+                                                        <div class="custom-select__dropdown-item">Специализация 4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="add-req__groups">
+                                            <fieldset class='form-group'>
+                                                <label>Опыт работы</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                            <fieldset class='form-group'>
+                                                <label>Возраст</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                        </div>
+                                        <fieldset class='form-group'>
+                                            <label>Водительское удостоверение</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--14'>
+                                            <label>Дополнительные требования</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div id="workInfo" class="add-worker__step">
+                                    <div class="add-worker__step-top">
+                                        <h3 class="add-worker__step-title">Условия работы</h3>
+                                    </div>
+                                    <div class="add-worker__step-grid add-worker__group-grid--three">
+                                        <fieldset class='form-group add-worker__field--14'>
+                                            <label>Заработная плата</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--14'>
+                                            <label>Характер работы</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--14'>
+                                            <label>График работы</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group add-worker__field--14'>
+                                            <label>Обязанности</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

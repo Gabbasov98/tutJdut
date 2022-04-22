@@ -91,6 +91,9 @@
             svg {
                 margin-right: 7px;
             }
+            &--danger {
+                color: $red;
+            }
         }
     }
     &__img {
@@ -643,5 +646,49 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.worker-mp {
+    &__docs {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        border-top: 1px solid #E2E9EF;
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            width: 180px;
+            margin-right: 25px;
+            color: $grey;
+        }
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 16px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+    .migrant-doc {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(133, 153, 166, 0.14);
+        border-radius: 7px;
+        min-height: 320px;
+        border: none;
+        &__grid--three {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }

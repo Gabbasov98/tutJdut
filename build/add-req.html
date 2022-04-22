@@ -30,7 +30,7 @@
                     <a href="" class="nav__item ">Объекты</a>
                     <a href="" class="nav__item">Клиенты</a>
                 </div>
-                
+                 
             </div>
             <div class="header__right">
                   
@@ -38,7 +38,7 @@
                     <img src="img/avatar2.jpg" alt="">
                     <span>Менеджер объектов</span>
                 </a>
-                
+                 
 
                 <a href="" class="header__btn header__btn--settings btn">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1808,6 +1808,117 @@
         </div>
     </div>
 </div>
+
+<!-- <div class="modal-backdrop show"></div> -->
+<!--  -->
+<div class="modal fade change-work-place" id="changeWorkPlace2" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__title">Изменить место работы</div>
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41401 6.00001L11.707 1.70701C12.098 1.31601 12.098 0.684006 11.707 0.293006C11.316 -0.0979941 10.684 -0.0979941 10.293 0.293006L6.00001 4.58601L1.70701 0.293006C1.31601 -0.0979941 0.684006 -0.0979941 0.293006 0.293006C-0.0979941 0.684006 -0.0979941 1.31601 0.293006 1.70701L4.58601 6.00001L0.293006 10.293C-0.0979941 10.684 -0.0979941 11.316 0.293006 11.707C0.488006 11.902 0.744006 12 1.00001 12C1.25601 12 1.51201 11.902 1.70701 11.707L6.00001 7.41401L10.293 11.707C10.488 11.902 10.744 12 11 12C11.256 12 11.512 11.902 11.707 11.707C12.098 11.316 12.098 10.684 11.707 10.293L7.41401 6.00001Z" fill="#85949E"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal__content">
+            <div class="change-work-place__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Адрес</th>
+                            <th>Контакт</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="" class="semi-bold blue-text">Askona обухово</a>
+                            </td>
+                            <td>
+                                <span class="grey-text">196084, город Санкт-Петербург, Митрофаньевское ш., д. 29 литер а, офис 409</span>
+                            </td>
+                            <td>
+                                <span class="grey-text d-block">Ермолаев Дмитрий Николаевич</span>
+                                <span class="grey-text d-block">+7 977 109-44-53  sakichev@altali.ru</span>
+                            </td>
+                            <td>
+                                <button class="icon-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0142 10.9925L12.9929 8.97128L14.4539 7.50953L16.4744 9.53003L15.0142 10.9925ZM9.80992 16.202L7.57717 16.4053L7.77517 14.1883L11.9879 9.97553L14.0099 11.9975L9.80992 16.202ZM17.5529 8.48678L17.5522 8.48603L15.4987 6.43253C14.9429 5.87828 13.9882 5.85203 13.4617 6.38078L6.71467 13.1278C6.47017 13.3715 6.31867 13.6955 6.28717 14.0383L6.00292 17.1658C5.98342 17.387 6.06217 17.606 6.21967 17.7635C6.36142 17.9053 6.55267 17.9833 6.74992 17.9833C6.77317 17.9833 6.79567 17.9825 6.81817 17.9803L9.94567 17.696C10.2892 17.6645 10.6124 17.5138 10.8562 17.27L17.6039 10.5223C18.1499 9.97478 18.1267 9.06128 17.5529 8.48678Z" fill="#85949E"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="icon-btn icon-btn--delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15C10.5 15.4125 10.1625 15.75 9.75 15.75C9.3375 15.75 9 15.4125 9 15V12C9 11.5875 9.3375 11.25 9.75 11.25C10.1625 11.25 10.5 11.5875 10.5 12V15ZM15 15C15 15.4125 14.6625 15.75 14.25 15.75C13.8375 15.75 13.5 15.4125 13.5 15V12C13.5 11.5875 13.8375 11.25 14.25 11.25C14.6625 11.25 15 11.5875 15 12V15ZM16.5 17.25C16.5 17.6632 16.164 18 15.75 18H8.25C7.836 18 7.5 17.6632 7.5 17.25V9H16.5V17.25ZM10.5 6.246C10.5 6.12975 10.6605 6 10.875 6H13.125C13.3395 6 13.5 6.12975 13.5 6.246V7.5H10.5V6.246ZM18.75 7.5H18H15V6.246C15 5.283 14.1593 4.5 13.125 4.5H10.875C9.84075 4.5 9 5.283 9 6.246V7.5H6H5.25C4.8375 7.5 4.5 7.8375 4.5 8.25C4.5 8.6625 4.8375 9 5.25 9H6V17.25C6 18.4905 7.0095 19.5 8.25 19.5H15.75C16.9905 19.5 18 18.4905 18 17.25V9H18.75C19.1625 9 19.5 8.6625 19.5 8.25C19.5 7.8375 19.1625 7.5 18.75 7.5Z" fill="#85949E"></path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="change-work-place__groups">
+                <fieldset class='form-group change-work-place__fg--13'>
+                    <label>Заработная плата</label>
+                    <input type='text' />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <label>Должность</label>
+                    <input type='text' />
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="modal__bottom">
+            <button class="change-manager__btn modal__btn btn btn-blue">Сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade change-work-place" id="addWorkPlace2" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__title">Добавить место работы</div>
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41401 6.00001L11.707 1.70701C12.098 1.31601 12.098 0.684006 11.707 0.293006C11.316 -0.0979941 10.684 -0.0979941 10.293 0.293006L6.00001 4.58601L1.70701 0.293006C1.31601 -0.0979941 0.684006 -0.0979941 0.293006 0.293006C-0.0979941 0.684006 -0.0979941 1.31601 0.293006 1.70701L4.58601 6.00001L0.293006 10.293C-0.0979941 10.684 -0.0979941 11.316 0.293006 11.707C0.488006 11.902 0.744006 12 1.00001 12C1.25601 12 1.51201 11.902 1.70701 11.707L6.00001 7.41401L10.293 11.707C10.488 11.902 10.744 12 11 12C11.256 12 11.512 11.902 11.707 11.707C12.098 11.316 12.098 10.684 11.707 10.293L7.41401 6.00001Z" fill="#85949E"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal__content">
+            <button class="change-work-place__add btn btn-grey-outline">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.75">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.825 16.6667H13.3333V10.8333C13.3333 10.3725 12.96 10 12.5 10H7.5C7.03917 10 6.66667 10.3725 6.66667 10.8333V16.6667H4.16667L4.17167 9.6525L9.99833 3.69333L15.8333 9.68666L15.825 16.6667ZM8.33333 16.6667H11.6667V11.6667H8.33333V16.6667ZM17.02 8.4875L10.5958 1.9175C10.2817 1.59666 9.71833 1.59666 9.40417 1.9175L2.97917 8.48833C2.675 8.80083 2.5 9.2375 2.5 9.68666V16.6667C2.5 17.5858 3.20583 18.3333 4.07333 18.3333H7.5H12.5H15.9258C16.7933 18.3333 17.5 17.5858 17.5 16.6667V9.68666C17.5 9.2375 17.325 8.80083 17.02 8.4875Z" fill="#85949E"/>
+                    </g>
+                </svg>
+                <span>Выбрать объект</span>
+            </button>
+            <div class="change-work-place__groups">
+                <fieldset class='form-group change-work-place__fg--13'>
+                    <label>Заработная плата</label>
+                    <input type='text' />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <label>Должность</label>
+                    <input type='text' />
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="modal__bottom">
+            <button class="change-manager__btn modal__btn btn btn-blue">Сохранить</button>
+        </div>
+    </div>
+</div>
+
 
 <!-- <div class="modal-backdrop show"></div> -->
 <!--  -->

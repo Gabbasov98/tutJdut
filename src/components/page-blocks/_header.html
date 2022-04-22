@@ -30,6 +30,13 @@
                     <a href="" class="nav__item @@if (active === 'objects'){nav__item--active}">Объекты</a>
                     <a href="" class="nav__item">Клиенты</a>
                 </div>
+                } @@if (status === "mp"){
+                <div class="nav">
+                    <a href="index-mp.html" class="nav__item  @@if (active === 'index'){nav__item--active}">Главная</a>
+                    <a href="" class="nav__item @@if (active === 'req'){nav__item--active}">Заявки</a>
+                    <a href="" class="nav__item  @@if (active === 'staff'){nav__item--active}">Сотрудники</a>
+                    <a href="" class="nav__item @@if (active === 'objects'){nav__item--active}">Объекты</a>
+                </div>
                 }
             </div>
             <div class="header__right">
@@ -47,6 +54,11 @@
                 <a href="" class="header__user">
                     <img src="img/avatar2.jpg" alt="">
                     <span>Менеджер объектов</span>
+                </a>
+                } @@if (status === "mp"){
+                <a href="" class="header__user">
+                    <img src="img/avatar3.jpg" alt="">
+                    <span>Менеджер подбора</span>
                 </a>
                 }
 
