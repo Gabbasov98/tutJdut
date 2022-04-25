@@ -109,6 +109,7 @@
             height: 32px;
             padding: 0 8px;
             margin-right: 20px;
+            font-size: 13px;
             svg {
                 margin-right: 9px;
             }
@@ -158,6 +159,12 @@
         &:nth-child(5) {
             border-left: 1px solid #EEF1F1;
             padding-left: 30px;
+        }
+    }
+    &--mp {
+        th,
+        td {
+            padding-left: 30px !important;
         }
     }
 }

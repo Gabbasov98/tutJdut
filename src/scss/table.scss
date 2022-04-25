@@ -279,6 +279,12 @@
             &:nth-child(7) {
                 max-width: 200px;
             }
+            &:nth-child(2) {
+                padding-right: 30px;
+            }
+        }
+        .table__status-badge {
+            margin-left: 5px;
         }
     }
 }
