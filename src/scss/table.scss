@@ -295,6 +295,9 @@
                 padding-left: 16px;
                 text-align: left;
             }
+            &:nth-child(8) {
+                padding-left: 30px;
+            }
         }
         .table__status-badge {
             margin-left: 5px;
